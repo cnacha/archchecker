@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="csvLog.fileName">resultLog</Property>
+        <Property name="file-header">model,defect,time</Property>
+        <Property name="basePath">result</Property>
+    </Properties>
+    <Appenders>
+     <!--    <File name="FILE" fileName="${basePath}/logfile.log" append="true">
+            <PatternLayout pattern="%-5p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n" />
+        </File>
+        -->
+        <!-- Console Appender -->
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%-5p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n" />
+        </Console>
+        <RollingFile name="csvFile" append="false" 
+                     fileName="${basePath}/${csvLog.fileName}.csv"
+                     filePattern="${csvLog.filename}-%d{MM-dd-yyyy}-%i.csv" >
+            <CsvParameterLayout delimiter="," header="${file-header}\n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="200" />
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="debug" additivity="false">
+            <AppenderRef ref="csvFile" level="debug"/>
+        </Root>
+    </Loggers>
+</Configuration>

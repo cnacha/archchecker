@@ -1,0 +1,36 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component query5{
+   port port5_0468() = initial -> exec -> port5_0468(); 
+}
+component repository3{
+   port port3_3685() = initial -> exec -> port3_3685(); 
+}
+component engine4{
+   port port4_6290() = initial -> exec -> port4_6290(); 
+}
+component impl1{
+   port port1_4079() = initial -> exec -> port1_4079(); 
+}
+component runtime2{
+   port port2_7827() = initial -> exec -> port2_7827(); 
+}
+system activiti { 
+   declare conn3_8640 = APIConnector; 
+   declare conn5_3258 = APIConnector; 
+   declare conn2_8068 = APIConnector; 
+   declare conn4_3053 = APIConnector; 
+   attach query5.port5_0468() = conn5_3258.provider(); 
+   attach repository3.port3_3685() = conn3_8640.provider() <*> conn5_3258.consumer(99) <*> conn2_8068.consumer(99); 
+   attach engine4.port4_6290() = conn4_3053.provider() <*> conn3_8640.consumer(99) <*> conn5_3258.consumer(99); 
+   attach impl1.port1_4079() = conn4_3053.consumer(99) <*> conn2_8068.consumer(99) <*> conn5_3258.consumer(99) <*> conn3_8640.consumer(99); 
+   attach runtime2.port2_7827() = conn2_8068.provider() <*> conn5_3258.consumer(99) <*> conn4_3053.consumer(99); 
+   execute query5.port5_0468() || repository3.port3_3685() || engine4.port4_6290() || impl1.port1_4079() || runtime2.port2_7827();
+}
+
+assert activiti ambiguousinterfacefree;
+assert activiti decompositionfree;
+assert activiti circularfree;
+assert activiti poltergeistfree;

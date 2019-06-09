@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.14" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="org.springframework.web.servlet.view" project="spring-webmvc" 
+    file="/spring-webmvc/src/main/java/org/springframework/web/servlet/view" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="243" x="145" y="133"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="org.springframework.web.servlet" project="spring-webmvc" 
+    file="/spring-webmvc/src/main/java/org/springframework/web/servlet" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="338" y="264"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="org.springframework.web.servlet.handler" project="spring-webmvc" 
+    file="/spring-webmvc/src/main/java/org/springframework/web/servlet/handler" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="599" y="165"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="org.springframework.web.servlet.i18n" project="spring-webmvc" 
+    file="/spring-webmvc/src/main/java/org/springframework/web/servlet/i18n" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="515" y="59"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="org.springframework.web.servlet.mvc" project="spring-webmvc" 
+    file="/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="629" y="373"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="6" language="java" name="org.springframework.web.servlet.theme" project="spring-webmvc" 
+    file="/spring-webmvc/src/main/java/org/springframework/web/servlet/theme" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="695" y="281"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <dependency id="7">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="8">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="9">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="10">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="11">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="13">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="false">    
+    <attributes public="false" package="true" protected="false" private="false" static="false"/>    
+    <operations public="false" package="true" protected="false" private="false" static="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

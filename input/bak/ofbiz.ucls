@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.14" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="org.apache.ofbiz.party.communication" project="ofbiz" 
+    file="/ofbiz/applications/party/src/main/java/org/apache/ofbiz/party/communication" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="240" x="5985" y="307"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="org.apache.ofbiz.party.contact" project="ofbiz" 
+    file="/ofbiz/applications/party/src/main/java/org/apache/ofbiz/party/contact" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="195" x="6591" y="307"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="org.apache.ofbiz.party.party" project="ofbiz" 
+    file="/ofbiz/applications/party/src/main/java/org/apache/ofbiz/party/party" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="181" x="7626" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="org.apache.ofbiz.party.content" project="ofbiz" 
+    file="/ofbiz/applications/party/src/main/java/org/apache/ofbiz/party/content" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="195" x="4971" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="org.apache.ofbiz.securityext.cert" project="ofbiz" 
+    file="/ofbiz/applications/securityext/src/main/java/org/apache/ofbiz/securityext/cert" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="211" x="3217" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="6" language="java" name="org.apache.ofbiz.securityext.login" project="ofbiz" 
+    file="/ofbiz/applications/securityext/src/main/java/org/apache/ofbiz/securityext/login" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="215" x="7096" y="127"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="7" language="java" name="org.apache.ofbiz.content.view" project="ofbiz" 
+    file="/ofbiz/applications/content/src/main/java/org/apache/ofbiz/content/view" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="193" x="4720" y="307"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="8" language="java" name="org.apache.ofbiz.content.cms" project="ofbiz" 
+    file="/ofbiz/applications/content/src/main/java/org/apache/ofbiz/content/cms" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="192" x="5472" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="9" language="java" name="org.apache.ofbiz.content.data" project="ofbiz" 
+    file="/ofbiz/applications/content/src/main/java/org/apache/ofbiz/content/data" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="192" x="5725" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="10" language="java" name="org.apache.ofbiz.content" project="ofbiz" 
+    file="/ofbiz/applications/content/src/main/java/org/apache/ofbiz/content" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="164" x="4479" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="11" language="java" name="org.apache.ofbiz.content.blog" project="ofbiz" 
+    file="/ofbiz/applications/content/src/main/java/org/apache/ofbiz/content/blog" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="191" x="4248" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="12" language="java" name="org.apache.ofbiz.content.compdoc" project="ofbiz" 
+    file="/ofbiz/applications/content/src/main/java/org/apache/ofbiz/content/compdoc" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="220" x="5725" y="307"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="13" language="java" name="org.apache.ofbiz.content.content" project="ofbiz" 
+    file="/ofbiz/applications/content/src/main/java/org/apache/ofbiz/content/content" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="210" x="5472" y="487"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="14" language="java" name="org.apache.ofbiz.content.layout" project="ofbiz" 
+    file="/ofbiz/applications/content/src/main/java/org/apache/ofbiz/content/layout" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="201" x="4479" y="307"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="15" language="java" name="org.apache.ofbiz.content.survey" project="ofbiz" 
+    file="/ofbiz/applications/content/src/main/java/org/apache/ofbiz/content/survey" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="205" x="5459" y="307"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="16" language="java" name="org.apache.ofbiz.content.output" project="ofbiz" 
+    file="/ofbiz/applications/content/src/main/java/org/apache/ofbiz/content/output" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="203" x="3748" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="17" language="java" name="org.apache.ofbiz.content.webapp.ftl" project="ofbiz" 
+    file="/ofbiz/applications/content/src/main/java/org/apache/ofbiz/content/webapp/ftl" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="226" x="5206" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="18" language="java" name="org.apache.ofbiz.workeffort.workeffort" project="ofbiz" 
+    file="/ofbiz/applications/workeffort/src/main/java/org/apache/ofbiz/workeffort/workeffort" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="244" x="6265" y="307"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="19" language="java" name="org.apache.ofbiz.workeffort.content" project="ofbiz" 
+    file="/ofbiz/applications/workeffort/src/main/java/org/apache/ofbiz/workeffort/content" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="227" x="4704" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="20" language="java" name="org.apache.ofbiz.product.imagemanagement" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/imagemanagement" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="278" x="4479" y="217"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="21" language="java" name="org.apache.ofbiz.product.test" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/test" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="190" x="1130" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="22" language="java" name="org.apache.ofbiz.shipment.test" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/shipment/test" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="199" x="7932" y="127"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="23" language="java" name="org.apache.ofbiz.product.store" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/store" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="198" x="6081" y="217"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="24" language="java" name="org.apache.ofbiz.shipment.thirdparty.ups" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/shipment/thirdparty/ups" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="255" x="6223" y="127"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="25" language="java" name="org.apache.ofbiz.shipment.thirdparty.usps" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/shipment/thirdparty/usps" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="262" x="6794" y="127"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="26" language="java" name="org.apache.ofbiz.shipment.weightPackage" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/shipment/weightPackage" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="265" x="305" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="27" language="java" name="org.apache.ofbiz.product.image" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/image" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="203" x="7383" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="28" language="java" name="org.apache.ofbiz.shipment.picklist" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/shipment/picklist" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="218" x="4840" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="29" language="java" name="org.apache.ofbiz.shipment.thirdparty.dhl" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/shipment/thirdparty/dhl" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="251" x="6319" y="217"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="30" language="java" name="org.apache.ofbiz.product.product" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/product" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="212" x="7096" y="307"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="31" language="java" name="org.apache.ofbiz.product.category" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/category" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="218" x="6855" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="32" language="java" name="org.apache.ofbiz.product.catalog" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/catalog" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="210" x="6686" y="487"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="33" language="java" name="org.apache.ofbiz.product.promo" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/promo" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="205" x="5694" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="34" language="java" name="org.apache.ofbiz.product.subscription" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/subscription" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="239" x="5098" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="35" language="java" name="org.apache.ofbiz.product.inventory" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/inventory" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="220" x="1928" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="36" language="java" name="org.apache.ofbiz.product.price" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/price" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="197" x="7114" y="217"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="37" language="java" name="org.apache.ofbiz.product.spreadsheetimport" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/spreadsheetimport" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="277" x="5377" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="38" language="java" name="org.apache.ofbiz.product.config" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/config" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="203" x="6570" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="39" language="java" name="org.apache.ofbiz.shipment.shipment" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/shipment/shipment" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="230" x="6826" y="307"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="40" language="java" name="org.apache.ofbiz.shipment.verify" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/shipment/verify" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="208" x="1360" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="41" language="java" name="org.apache.ofbiz.product.supplier" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/supplier" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="214" x="7372" y="217"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="42" language="java" name="org.apache.ofbiz.product.category.ftl" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/category/ftl" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="231" x="7094" y="487"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="43" language="java" name="org.apache.ofbiz.shipment.packing" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/shipment/packing" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="222" x="7932" y="217"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="44" language="java" name="org.apache.ofbiz.shipment.thirdparty.fedex" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/shipment/thirdparty/fedex" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="266" x="7626" y="217"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="45" language="java" name="org.apache.ofbiz.product.feature" project="ofbiz" 
+    file="/ofbiz/applications/product/src/main/java/org/apache/ofbiz/product/feature" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="209" x="7134" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="46" language="java" name="org.apache.ofbiz.accounting.test" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/test" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="209" x="4302" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="47" language="java" name="org.apache.ofbiz.accounting.thirdparty.securepay" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/thirdparty/securepay" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="304" x="2873" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="48" language="java" name="org.apache.ofbiz.accounting.period" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/period" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="223" x="867" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="49" language="java" name="org.apache.ofbiz.accounting.thirdparty.worldpay" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/thirdparty/worldpay" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="296" x="4967" y="127"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="50" language="java" name="org.apache.ofbiz.accounting.thirdparty.clearcommerce" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/thirdparty/clearcommerce" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="335" x="6825" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="51" language="java" name="org.apache.ofbiz.accounting" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="184" x="5857" y="217"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="52" language="java" name="org.apache.ofbiz.accounting.tax" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/tax" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="205" x="6827" y="217"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="53" language="java" name="org.apache.ofbiz.accounting.thirdparty.cybersource" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/thirdparty/cybersource" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="316" x="2188" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="54" language="java" name="org.apache.ofbiz.accounting.agreement" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/agreement" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="249" x="4551" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="55" language="java" name="org.apache.ofbiz.accounting.thirdparty.ideal" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/thirdparty/ideal" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="271" x="3991" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="56" language="java" name="org.apache.ofbiz.accounting.thirdparty.paypal" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/thirdparty/paypal" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="281" x="5303" y="127"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="57" language="java" name="org.apache.ofbiz.accounting.finaccount" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/finaccount" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="247" x="5939" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="58" language="java" name="org.apache.ofbiz.accounting.util" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/util" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="204" x="5979" y="127"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="59" language="java" name="org.apache.ofbiz.accounting.thirdparty.verisign" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/thirdparty/verisign" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="289" x="2544" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="60" language="java" name="org.apache.ofbiz.accounting.thirdparty.eway" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/thirdparty/eway" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="274" x="7200" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="61" language="java" name="org.apache.ofbiz.accounting.thirdparty.valuelink" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/thirdparty/valuelink" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="294" x="5624" y="127"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="62" language="java" name="org.apache.ofbiz.accounting.invoice" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/invoice" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="227" x="6226" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="63" language="java" name="org.apache.ofbiz.accounting.ledger" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/ledger" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="223" x="42" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="64" language="java" name="org.apache.ofbiz.accounting.payment" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/payment" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="236" x="6518" y="127"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="65" language="java" name="org.apache.ofbiz.accounting.thirdparty.sagepay" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/thirdparty/sagepay" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="292" x="6493" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="66" language="java" name="org.apache.ofbiz.accounting.thirdparty.authorizedotnet" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/thirdparty/authorizedotnet" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="333" x="7514" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="67" language="java" name="org.apache.ofbiz.accounting.thirdparty.gosoftware" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/thirdparty/gosoftware" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="309" x="7887" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="68" language="java" name="org.apache.ofbiz.accounting.thirdparty.orbital" project="ofbiz" 
+    file="/ofbiz/applications/accounting/src/main/java/org/apache/ofbiz/accounting/thirdparty/orbital" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="280" x="1608" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="69" language="java" name="org.apache.ofbiz.marketing.tracking" project="ofbiz" 
+    file="/ofbiz/applications/marketing/src/main/java/org/apache/ofbiz/marketing/tracking" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="229" x="7348" y="307"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="70" language="java" name="org.apache.ofbiz.marketing.report" project="ofbiz" 
+    file="/ofbiz/applications/marketing/src/main/java/org/apache/ofbiz/marketing/report" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="217" x="610" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="71" language="java" name="org.apache.ofbiz.marketing.marketing" project="ofbiz" 
+    file="/ofbiz/applications/marketing/src/main/java/org/apache/ofbiz/marketing/marketing" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="240" x="3468" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="72" language="java" name="org.apache.ofbiz.sfa.vcard" project="ofbiz" 
+    file="/ofbiz/applications/marketing/src/main/java/org/apache/ofbiz/sfa/vcard" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="174" x="7666" y="307"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <dependency id="73">    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="64"/>  
+  </dependency>  
+  <dependency id="74">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="75">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="76">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="64"/>  
+  </dependency>  
+  <dependency id="77">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="78">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="79">    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="80">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <dependency id="81">    
+    <end type="SOURCE" refId="64"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="82">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="83">    
+    <end type="SOURCE" refId="66"/>    
+    <end type="TARGET" refId="64"/>  
+  </dependency>  
+  <dependency id="84">    
+    <bendpoint x="6796" y="217"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="85">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="86">    
+    <bendpoint x="7103" y="397"/>    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="87">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="88">    
+    <bendpoint x="6560" y="307"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <dependency id="89">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="42"/>  
+  </dependency>  
+  <dependency id="90">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="91">    
+    <bendpoint x="5948" y="127"/>    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="92">    
+    <end type="SOURCE" refId="69"/>    
+    <end type="TARGET" refId="31"/>  
+  </dependency>  
+  <dependency id="93">    
+    <bendpoint x="7341" y="127"/>    
+    <bendpoint x="7341" y="217"/>    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="94">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="64"/>  
+  </dependency>  
+  <dependency id="95">    
+    <end type="SOURCE" refId="49"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="96">    
+    <bendpoint x="6621" y="217"/>    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="97">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="98">    
+    <bendpoint x="6803" y="397"/>    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="99">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="58"/>  
+  </dependency>  
+  <dependency id="100">    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="101">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="31"/>  
+  </dependency>  
+  <dependency id="102">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="103">    
+    <bendpoint x="6824" y="397"/>    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <dependency id="104">    
+    <bendpoint x="7062" y="217"/>    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="105">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <dependency id="106">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="43"/>  
+  </dependency>  
+  <dependency id="107">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="108">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="109">    
+    <end type="SOURCE" refId="72"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="110">    
+    <bendpoint x="4673" y="397"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="111">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="112">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="113">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="114">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="45"/>  
+  </dependency>  
+  <dependency id="115">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="116">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="117">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="118">    
+    <bendpoint x="7083" y="217"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="119">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="120">    
+    <bendpoint x="6539" y="397"/>    
+    <bendpoint x="6539" y="307"/>    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="121">    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="51"/>  
+  </dependency>  
+  <dependency id="122">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="123">    
+    <bendpoint x="6701" y="217"/>    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="124">    
+    <bendpoint x="6642" y="217"/>    
+    <end type="SOURCE" refId="64"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="125">    
+    <bendpoint x="7635" y="307"/>    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="126">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="127">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="128">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <dependency id="129">    
+    <end type="SOURCE" refId="50"/>    
+    <end type="TARGET" refId="64"/>  
+  </dependency>  
+  <dependency id="130">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="131">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="132">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="133">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="134">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="64"/>  
+  </dependency>  
+  <dependency id="135">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="136">    
+    <bendpoint x="5694" y="307"/>    
+    <bendpoint x="5694" y="397"/>    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="137">    
+    <bendpoint x="6600" y="217"/>    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="138">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="139">    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="140">    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="141">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="142">    
+    <bendpoint x="6775" y="217"/>    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="143">    
+    <end type="SOURCE" refId="60"/>    
+    <end type="TARGET" refId="64"/>  
+  </dependency>  
+  <dependency id="144">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="145">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

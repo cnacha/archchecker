@@ -1,0 +1,46 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component query5{
+   port port5_7316() = initial -> exec -> port5_7316(); 
+}
+component jpa2{
+   port port2_0819() = initial -> exec -> port2_0819(); 
+}
+component spi3{
+   port port3_7833() = initial -> exec -> port3_7833(); 
+}
+component graph7{
+   port port7_5585() = initial -> exec -> port7_5585(); 
+}
+component cfg4{
+   port port4_4957() = initial -> exec -> port4_4957(); 
+}
+component type6{
+   port port6_2396() = initial -> exec -> port6_2396(); 
+}
+component hibernate1{
+   port port1_0729() = initial -> exec -> port1_0729(); 
+}
+system hibernate { 
+   declare conn2_7361 = APIConnector; 
+   declare conn4_0760 = APIConnector; 
+   declare conn1_1795 = APIConnector; 
+   declare conn6_2771 = APIConnector; 
+   declare conn5_8774 = APIConnector; 
+   declare conn7_1801 = APIConnector; 
+   attach query5.port5_7316() = conn5_8774.provider() <*> conn6_2771.consumer(99) <*> conn7_1801.consumer(99); 
+   attach jpa2.port2_0819() = conn2_7361.provider() <*> conn7_1801.consumer(99) <*> conn6_2771.consumer(99) <*> conn5_8774.consumer(99); 
+   attach spi3.port3_7833() = conn2_7361.consumer(99) <*> conn5_8774.consumer(99) <*> conn1_1795.consumer(99); 
+   attach graph7.port7_5585() = conn7_1801.provider(); 
+   attach cfg4.port4_4957() = conn4_0760.provider() <*> conn5_8774.consumer(99) <*> conn6_2771.consumer(99); 
+   attach type6.port6_2396() = conn6_2771.provider(); 
+   attach hibernate1.port1_0729() = conn1_1795.provider() <*> conn4_0760.consumer(99) <*> conn2_7361.consumer(99) <*> conn5_8774.consumer(99) <*> conn7_1801.consumer(99) <*> conn6_2771.consumer(99); 
+   execute query5.port5_7316() || jpa2.port2_0819() || spi3.port3_7833() || graph7.port7_5585() || cfg4.port4_4957() || type6.port6_2396() || hibernate1.port1_0729();
+}
+
+assert hibernate ambiguousinterfacefree;
+assert hibernate decompositionfree;
+assert hibernate circularfree;
+assert hibernate poltergeistfree;

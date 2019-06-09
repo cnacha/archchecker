@@ -1,0 +1,31 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component beans1{
+   port port1_5737() = initial -> exec -> port1_5737(); 
+}
+component lang4{
+   port port4_5664() = initial -> exec -> port4_5664(); 
+}
+component util3{
+   port port3_7794() = initial -> exec -> port3_7794(); 
+}
+component core2{
+   port port2_7047() = initial -> exec -> port2_7047(); 
+}
+system springbeans { 
+   declare conn4_5922 = APIConnector; 
+   declare conn2_1073 = APIConnector; 
+   declare conn3_2430 = APIConnector; 
+   attach beans1.port1_5737() = conn2_1073.consumer(99) <*> conn4_5922.consumer(99) <*> conn3_2430.consumer(99); 
+   attach lang4.port4_5664() = conn4_5922.provider(); 
+   attach util3.port3_7794() = conn3_2430.provider() <*> conn4_5922.consumer(99); 
+   attach core2.port2_7047() = conn2_1073.provider() <*> conn4_5922.consumer(99) <*> conn3_2430.consumer(99); 
+   execute beans1.port1_5737() || lang4.port4_5664() || util3.port3_7794() || core2.port2_7047();
+}
+
+assert springbeans ambiguousinterfacefree;
+assert springbeans decompositionfree;
+assert springbeans circularfree;
+assert springbeans poltergeistfree;

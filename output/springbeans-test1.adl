@@ -1,0 +1,41 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component beans2{
+   port port2_5592() = initial -> exec -> port2_5592(); 
+}
+component xml5{
+   port port5_9435() = initial -> exec -> port5_9435(); 
+}
+component core6{
+   port port6_9703() = initial -> exec -> port6_9703(); 
+}
+component factory4{
+   port port4_9929() = initial -> exec -> port4_9929(); 
+}
+component config3{
+   port port3_0460() = initial -> exec -> port3_0460(); 
+}
+component parsing1{
+   port port1_8632() = initial -> exec -> port1_8632(); 
+}
+system springbeans { 
+   declare conn3_5609 = APIConnector; 
+   declare conn2_6130 = APIConnector; 
+   declare conn6_7300 = APIConnector; 
+   declare conn1_3714 = APIConnector; 
+   declare conn4_8630 = APIConnector; 
+   attach beans2.port2_5592() = conn2_6130.provider() <*> conn6_7300.consumer(99); 
+   attach xml5.port5_9435() = conn2_6130.consumer(99) <*> conn3_5609.consumer(99) <*> conn4_8630.consumer(99) <*> conn6_7300.consumer(99) <*> conn1_3714.consumer(99); 
+   attach core6.port6_9703() = conn6_7300.provider(); 
+   attach factory4.port4_9929() = conn4_8630.provider() <*> conn2_6130.consumer(99) <*> conn6_7300.consumer(99); 
+   attach config3.port3_0460() = conn3_5609.provider() <*> conn6_7300.consumer(99) <*> conn4_8630.consumer(99) <*> conn2_6130.consumer(99); 
+   attach parsing1.port1_8632() = conn1_3714.provider() <*> conn3_5609.consumer(99) <*> conn4_8630.consumer(99) <*> conn2_6130.consumer(99); 
+   execute beans2.port2_5592() || xml5.port5_9435() || core6.port6_9703() || factory4.port4_9929() || config3.port3_0460() || parsing1.port1_8632();
+}
+
+assert springbeans ambiguousinterfacefree;
+assert springbeans decompositionfree;
+assert springbeans circularfree;
+assert springbeans poltergeistfree;

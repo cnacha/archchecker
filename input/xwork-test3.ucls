@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.14" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="com.opensymphony.xwork2" project="xwork-core" 
+    file="/xwork-core/src/main/java/com/opensymphony/xwork2" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="195" y="176"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="com.opensymphony.xwork2.config" project="xwork-core" 
+    file="/xwork-core/src/main/java/com/opensymphony/xwork2/config" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="666" y="131"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="com.opensymphony.xwork2.inject" project="xwork-core" 
+    file="/xwork-core/src/main/java/com/opensymphony/xwork2/inject" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="427" y="3"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="com.opensymphony.xwork2.config.impl" project="xwork-core" 
+    file="/xwork-core/src/main/java/com/opensymphony/xwork2/config/impl" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="665" y="270"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="com.opensymphony.xwork2.util.location" project="xwork-core" 
+    file="/xwork-core/src/main/java/com/opensymphony/xwork2/util/location" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="251" x="165" y="288"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="6" language="java" name="com.opensymphony.xwork2.conversion.impl" project="xwork-core" 
+    file="/xwork-core/src/main/java/com/opensymphony/xwork2/conversion/impl" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="829" y="52"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="7" language="java" name="com.opensymphony.xwork2.interceptor" project="xwork-core" 
+    file="/xwork-core/src/main/java/com/opensymphony/xwork2/interceptor" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="120" y="59"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <dependency id="8">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="9">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="10">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="11">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="13">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="16">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="17">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="18">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="19">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="20">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="21">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="22">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="false">    
+    <attributes public="false" package="true" protected="false" private="false" static="false"/>    
+    <operations public="false" package="true" protected="false" private="false" static="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="activiti-test1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="activiti-test2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="activiti.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="hibernate-test1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="hibernate.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="hsqldb-test1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="hsqldb-test2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="hsqldb.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="log4j-test1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="log4j-test2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="log4j.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="springbeans-test1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="springbeans-test2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="springbeans.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="springwebmvc-test1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="springwebmvc-test2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="springwebmvc-test3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="springwebmvc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="xerces-dummy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="xerces-test1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="xerces-test2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="xerces.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="xerces2j-small.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="xerces2j.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="xwork-test1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="xwork-test2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="xwork-test3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559611018840" name="duplicate:http://www.semanticweb.org/user/ontologies/2561/0/arch-library" uri="xwork.owl"/>
+    </group>
+</catalog>

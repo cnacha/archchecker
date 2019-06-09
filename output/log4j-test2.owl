@@ -1,0 +1,1143 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2561/0/arch-library"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2561/0/arch-library">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2561/0/arch-library#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CnS:Server"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subscribe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LinkOverload"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Port"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEventTrail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataOut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RP:DataAccessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Connector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAttachment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subscriber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#APIConnector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Responder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInterfaceOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Request"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#consumedByNum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Input"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Response"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasId"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Provider"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#callToNum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CnS:Client"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsedLink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LinkedComp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#API:Consumer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Store"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnusedLink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CnSConnector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PnS:Subscriber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataWriteConnector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#API:Provider"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Output"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataReadConnector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LavaFlow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smell"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRoleOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProcessDef"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPortOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EAConnector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RP:DataRepository"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Writer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reader"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Requester"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PnS:Publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Provide"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAttachmentOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PnSConnector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consume"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#conn5_4553"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#port5_5250"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#consumerconn1_4996"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#conn2_4414"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#consumerconn2_4414"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#conn1_4996"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#consumerconn3_3377"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#log4j2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#conn3_3377"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#providerconn5_4553"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#net4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#port1_7770"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#port2_3946"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#port4_1895"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#providerconn1_4996"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#providerconn3_3377"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#consumerconn5_4553"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#port3_4017"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#or5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#helpers1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#providerconn2_4414"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#spi3"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#APIConnector"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Connector"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasRole"/>
+                <Class IRI="#Consumer"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasRole"/>
+                <Class IRI="#Provider"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CnSConnector"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Connector"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasRole"/>
+                <Class IRI="#Requester"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasRole"/>
+                <Class IRI="#Responder"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Consume"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttachment"/>
+            <Class IRI="#Consumer"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DataReadConnector"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Connector"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Class IRI="#Reader"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Class IRI="#Store"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DataWriteConnector"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Connector"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Class IRI="#Store"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Class IRI="#Writer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Input"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Port"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Class IRI="#DataIn"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LavaFlow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPort"/>
+            <Class IRI="#UnusedLink"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LinkOverload"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#callToNum"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#consumedByNum"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LinkedComp"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Component"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPort"/>
+                <Class IRI="#UsedLink"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Output"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Port"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Class IRI="#DataOut"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PnSConnector"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Connector"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Class IRI="#Publisher"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Class IRI="#Subscriber"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Provide"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttachment"/>
+            <Class IRI="#Provider"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Publish"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Port"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Class IRI="#Publisher"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Request"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Port"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Class IRI="#Requester"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Response"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Port"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Class IRI="#Responder"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Subscribe"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Port"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Class IRI="#Subscriber"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UnusedLink"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#callToNum"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#consumedByNum"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UsedLink"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Port"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Class IRI="#Role"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasAttachment"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#API:Consumer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Component"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPort"/>
+                <Class IRI="#Consume"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#API:Provider"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Component"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPort"/>
+                <Class IRI="#Provide"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CnS:Client"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Component"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPort"/>
+                <Class IRI="#Request"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CnS:Server"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Component"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPort"/>
+                <Class IRI="#Response"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PnS:Publisher"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Component"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPort"/>
+                <Class IRI="#Publish"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PnS:Subscriber"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Component"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPort"/>
+                <Class IRI="#Subscribe"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RP:DataAccessor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Component"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPort"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Port"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasAttachment"/>
+                        <ObjectUnionOf>
+                            <Class IRI="#Reader"/>
+                            <Class IRI="#Writer"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RP:DataRepository"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Component"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPort"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Port"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasAttachment"/>
+                        <Class IRI="#Store"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#APIConnector"/>
+        <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consume"/>
+        <Class IRI="#Port"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataIn"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataOut"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EAConnector"/>
+        <Class IRI="#Smell"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LavaFlow"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LavaFlow"/>
+        <Class IRI="#Smell"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LinkOverload"/>
+        <Class IRI="#Smell"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LinkedComp"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Port"/>
+        <Class IRI="#Interface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Provide"/>
+        <Class IRI="#Port"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Provider"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Publisher"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reader"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Requester"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Responder"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role"/>
+        <Class IRI="#Interface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Store"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subscriber"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnusedLink"/>
+        <Class IRI="#Port"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnusedLink"/>
+        <Class IRI="#Smell"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsedLink"/>
+        <Class IRI="#Port"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Writer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#API:Consumer"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#API:Provider"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#Connector"/>
+        <Class IRI="#Interface"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DataReadConnector"/>
+        <Class IRI="#DataWriteConnector"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LavaFlow"/>
+        <Class IRI="#LinkedComp"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Port"/>
+        <Class IRI="#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Reader"/>
+        <Class IRI="#Writer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Request"/>
+        <Class IRI="#Response"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Requester"/>
+        <Class IRI="#Responder"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#UnusedLink"/>
+        <Class IRI="#UsedLink"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Consumer"/>
+        <NamedIndividual IRI="#consumerconn1_4996"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consumer"/>
+        <NamedIndividual IRI="#consumerconn2_4414"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consumer"/>
+        <NamedIndividual IRI="#consumerconn3_3377"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consumer"/>
+        <NamedIndividual IRI="#consumerconn5_4553"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Provider"/>
+        <NamedIndividual IRI="#providerconn1_4996"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Provider"/>
+        <NamedIndividual IRI="#providerconn2_4414"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Provider"/>
+        <NamedIndividual IRI="#providerconn3_3377"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Provider"/>
+        <NamedIndividual IRI="#providerconn5_4553"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#helpers1"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#log4j2"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#net4"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#or5"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#spi3"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#conn1_4996"/>
+        <NamedIndividual IRI="#consumerconn1_4996"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#conn1_4996"/>
+        <NamedIndividual IRI="#providerconn1_4996"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#conn2_4414"/>
+        <NamedIndividual IRI="#consumerconn2_4414"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#conn2_4414"/>
+        <NamedIndividual IRI="#providerconn2_4414"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#conn3_3377"/>
+        <NamedIndividual IRI="#consumerconn3_3377"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#conn3_3377"/>
+        <NamedIndividual IRI="#providerconn3_3377"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#conn5_4553"/>
+        <NamedIndividual IRI="#consumerconn5_4553"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#conn5_4553"/>
+        <NamedIndividual IRI="#providerconn5_4553"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#helpers1"/>
+        <NamedIndividual IRI="#port1_7770"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#log4j2"/>
+        <NamedIndividual IRI="#port2_3946"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#net4"/>
+        <NamedIndividual IRI="#port4_1895"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#or5"/>
+        <NamedIndividual IRI="#port5_5250"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port1_7770"/>
+        <NamedIndividual IRI="#consumerconn2_4414"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port1_7770"/>
+        <NamedIndividual IRI="#consumerconn3_3377"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port1_7770"/>
+        <NamedIndividual IRI="#providerconn1_4996"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port2_3946"/>
+        <NamedIndividual IRI="#consumerconn3_3377"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port2_3946"/>
+        <NamedIndividual IRI="#providerconn2_4414"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port3_4017"/>
+        <NamedIndividual IRI="#consumerconn5_4553"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port3_4017"/>
+        <NamedIndividual IRI="#providerconn3_3377"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port4_1895"/>
+        <NamedIndividual IRI="#consumerconn1_4996"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port4_1895"/>
+        <NamedIndividual IRI="#consumerconn2_4414"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port4_1895"/>
+        <NamedIndividual IRI="#consumerconn3_3377"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port5_5250"/>
+        <NamedIndividual IRI="#consumerconn1_4996"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port5_5250"/>
+        <NamedIndividual IRI="#consumerconn2_4414"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port5_5250"/>
+        <NamedIndividual IRI="#consumerconn3_3377"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#port5_5250"/>
+        <NamedIndividual IRI="#providerconn5_4553"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#spi3"/>
+        <NamedIndividual IRI="#port3_4017"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#callToNum"/>
+        <NamedIndividual IRI="#port1_7770"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#consumedByNum"/>
+        <NamedIndividual IRI="#port1_7770"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#callToNum"/>
+        <NamedIndividual IRI="#port2_3946"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#consumedByNum"/>
+        <NamedIndividual IRI="#port2_3946"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#callToNum"/>
+        <NamedIndividual IRI="#port3_4017"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#consumedByNum"/>
+        <NamedIndividual IRI="#port3_4017"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#callToNum"/>
+        <NamedIndividual IRI="#port4_1895"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#consumedByNum"/>
+        <NamedIndividual IRI="#port4_1895"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#callToNum"/>
+        <NamedIndividual IRI="#port5_5250"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#consumedByNum"/>
+        <NamedIndividual IRI="#port5_5250"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInterface"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPort"/>
+        <ObjectProperty IRI="#hasInterface"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRole"/>
+        <ObjectProperty IRI="#hasInterface"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAttachmentOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInterfaceOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPortOf"/>
+        <ObjectProperty IRI="#isInterfaceOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRoleOf"/>
+        <ObjectProperty IRI="#isInterfaceOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <ObjectProperty IRI="#isAttachmentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPort"/>
+        <ObjectProperty IRI="#isPortOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRole"/>
+        <ObjectProperty IRI="#isRoleOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isPortOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isRoleOf"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLink"/>
+        <Class IRI="#Connector"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPort"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Connector"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLink"/>
+        <Class IRI="#Connector"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasEventTrail"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasId"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasProcessDef"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEventTrail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasId"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProcessDef"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Component"/>
+                <Variable IRI="#comp2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="#pns"/>
+                <Variable IRI="#sub"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="#p2"/>
+                <Variable IRI="#pub"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="#p4"/>
+                <Variable IRI="#sub"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="#cns"/>
+                <Variable IRI="#pro"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="#p1"/>
+                <Variable IRI="#con"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="#p1"/>
+                <Variable IRI="#comp1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="#p4"/>
+                <Variable IRI="#comp2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="#p2"/>
+                <Variable IRI="#comp1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="#p3"/>
+                <Variable IRI="#comp2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Component"/>
+                <Variable IRI="#comp1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#PnSConnector"/>
+                <Variable IRI="#pns"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="#cns"/>
+                <Variable IRI="#con"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="#p3"/>
+                <Variable IRI="#pro"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#CnSConnector"/>
+                <Variable IRI="#cns"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="#pns"/>
+                <Variable IRI="#pub"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#EAConnector"/>
+                <Variable IRI="#pns"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#EAConnector"/>
+                <Variable IRI="#cns"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

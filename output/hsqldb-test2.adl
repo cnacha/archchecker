@@ -1,0 +1,41 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component result2{
+   port port2_7434() = initial -> exec -> port2_7434(); 
+}
+component pool5{
+   port port5_1263() = initial -> exec -> port5_1263(); 
+}
+component jdbc4{
+   port port4_2425() = initial -> exec -> port4_2425(); 
+}
+component types3{
+   port port3_9968() = initial -> exec -> port3_9968(); 
+}
+component persist1{
+   port port1_1302() = initial -> exec -> port1_1302(); 
+}
+component rowio6{
+   port port6_6945() = initial -> exec -> port6_6945(); 
+}
+system hsqldb { 
+   declare conn6_7782 = APIConnector; 
+   declare conn3_1459 = APIConnector; 
+   declare conn4_5285 = APIConnector; 
+   declare conn1_8111 = APIConnector; 
+   declare conn2_4474 = APIConnector; 
+   attach result2.port2_7434() = conn2_4474.provider() <*> conn6_7782.consumer(99); 
+   attach pool5.port5_1263() = conn4_5285.consumer(99); 
+   attach jdbc4.port4_2425() = conn4_5285.provider() <*> conn1_8111.consumer(99) <*> conn3_1459.consumer(99) <*> conn2_4474.consumer(99); 
+   attach types3.port3_9968() = conn3_1459.provider() <*> conn1_8111.consumer(99) <*> conn2_4474.consumer(99); 
+   attach persist1.port1_1302() = conn1_8111.provider() <*> conn2_4474.consumer(99); 
+   attach rowio6.port6_6945() = conn6_7782.provider() <*> conn1_8111.consumer(99) <*> conn3_1459.consumer(99); 
+   execute result2.port2_7434() || pool5.port5_1263() || jdbc4.port4_2425() || types3.port3_9968() || persist1.port1_1302() || rowio6.port6_6945();
+}
+
+assert hsqldb ambiguousinterfacefree;
+assert hsqldb decompositionfree;
+assert hsqldb circularfree;
+assert hsqldb poltergeistfree;

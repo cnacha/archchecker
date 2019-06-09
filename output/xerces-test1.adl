@@ -1,0 +1,36 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component impl2{
+   port port2_8248() = initial -> exec -> port2_8248(); 
+}
+component util4{
+   port port4_6972() = initial -> exec -> port4_6972(); 
+}
+component parsers5{
+   port port5_3604() = initial -> exec -> port5_3604(); 
+}
+component dom1{
+   port port1_2409() = initial -> exec -> port1_2409(); 
+}
+component dtd3{
+   port port3_2269() = initial -> exec -> port3_2269(); 
+}
+system xerces { 
+   declare conn5_4180 = APIConnector; 
+   declare conn2_4885 = APIConnector; 
+   declare conn4_3870 = APIConnector; 
+   declare conn3_4687 = APIConnector; 
+   attach impl2.port2_8248() = conn2_4885.provider() <*> conn4_3870.consumer(99) <*> conn3_4687.consumer(99); 
+   attach util4.port4_6972() = conn4_3870.provider(); 
+   attach parsers5.port5_3604() = conn5_4180.provider() <*> conn4_3870.consumer(99) <*> conn2_4885.consumer(99) <*> conn3_4687.consumer(99); 
+   attach dom1.port1_2409() = conn3_4687.consumer(99) <*> conn4_3870.consumer(99) <*> conn2_4885.consumer(99) <*> conn5_4180.consumer(99); 
+   attach dtd3.port3_2269() = conn3_4687.provider() <*> conn4_3870.consumer(99) <*> conn2_4885.consumer(99); 
+   execute impl2.port2_8248() || util4.port4_6972() || parsers5.port5_3604() || dom1.port1_2409() || dtd3.port3_2269();
+}
+
+assert xerces ambiguousinterfacefree;
+assert xerces decompositionfree;
+assert xerces circularfree;
+assert xerces poltergeistfree;

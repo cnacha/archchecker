@@ -1,0 +1,39 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component mvc5{
+   port port5_1699() = initial -> exec -> port5_1699(); 
+}
+component i18n4{
+   port port4_9526() = initial -> exec -> port4_9526(); 
+}
+component handler3{
+   port port3_8828() = initial -> exec -> port3_8828(); 
+}
+component view1{
+   port port1_7296() = initial -> exec -> port1_7296(); 
+}
+component theme6{
+   port port6_9350() = initial -> exec -> port6_9350(); 
+}
+component servlet2{
+   port port2_7588() = initial -> exec -> port2_7588(); 
+}
+system springwebmvc { 
+   declare conn2_6836 = APIConnector; 
+   declare conn3_6927 = APIConnector; 
+   declare conn1_1048 = APIConnector; 
+   attach mvc5.port5_1699() = conn2_6836.consumer(99); 
+   attach i18n4.port4_9526() = conn3_6927.consumer(99) <*> conn2_6836.consumer(99); 
+   attach handler3.port3_8828() = conn3_6927.provider() <*> conn2_6836.consumer(99); 
+   attach view1.port1_7296() = conn1_1048.provider() <*> conn2_6836.consumer(99); 
+   attach theme6.port6_9350() = conn2_6836.consumer(99) <*> conn3_6927.consumer(99); 
+   attach servlet2.port2_7588() = conn2_6836.provider() <*> conn1_1048.consumer(99); 
+   execute mvc5.port5_1699() || i18n4.port4_9526() || handler3.port3_8828() || view1.port1_7296() || theme6.port6_9350() || servlet2.port2_7588();
+}
+
+assert springwebmvc ambiguousinterfacefree;
+assert springwebmvc decompositionfree;
+assert springwebmvc circularfree;
+assert springwebmvc poltergeistfree;

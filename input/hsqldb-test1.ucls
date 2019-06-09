@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.14" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="org.hsqldb" project="hsqldb" file="/hsqldb/doc-src/verbatim/src/org/hsqldb" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="101" x="122" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="org.hsqldb.error" project="hsqldb" file="/hsqldb/src/org/hsqldb/error" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="116" x="244" y="217"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="org.hsqldb.lib" project="hsqldb" file="/hsqldb/src/org/hsqldb/lib" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="101" x="122" y="307"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="org.hsqldb.navigator" project="hsqldb" file="/hsqldb/src/org/hsqldb/navigator" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="140" x="62" y="127"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="org.hsqldb.server" project="hsqldb" 
+    file="/hsqldb/doc-src/verbatim/src/org/hsqldb/server" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="124" x="223" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <dependency id="6">    
+    <bendpoint x="253" y="307"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="7">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="8">    
+    <bendpoint x="232" y="127"/>    
+    <bendpoint x="213" y="217"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="9">    
+    <bendpoint x="112" y="217"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="10">    
+    <bendpoint x="70" y="217"/>    
+    <bendpoint x="70" y="307"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="11">    
+    <bendpoint x="31" y="127"/>    
+    <bendpoint x="31" y="217"/>    
+    <bendpoint x="31" y="307"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="13">    
+    <bendpoint x="390" y="307"/>    
+    <bendpoint x="390" y="217"/>    
+    <bendpoint x="390" y="127"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="false">    
+    <attributes public="false" package="true" protected="false" private="false" static="false"/>    
+    <operations public="false" package="true" protected="false" private="false" static="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

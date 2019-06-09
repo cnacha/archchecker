@@ -1,0 +1,31 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component xwork21{
+   port port1_0314() = initial -> exec -> port1_0314(); 
+}
+component util4{
+   port port4_4264() = initial -> exec -> port4_4264(); 
+}
+component inject3{
+   port port3_3867() = initial -> exec -> port3_3867(); 
+}
+component config2{
+   port port2_0615() = initial -> exec -> port2_0615(); 
+}
+system xwork { 
+   declare conn1_9317 = APIConnector; 
+   declare conn3_9308 = APIConnector; 
+   declare conn2_6157 = APIConnector; 
+   attach xwork21.port1_0314() = conn1_9317.provider() <*> conn3_9308.consumer(99) <*> conn2_6157.consumer(99); 
+   attach util4.port4_4264() = conn3_9308.consumer(99) <*> conn1_9317.consumer(99); 
+   attach inject3.port3_3867() = conn3_9308.provider(); 
+   attach config2.port2_0615() = conn2_6157.provider() <*> conn3_9308.consumer(99) <*> conn1_9317.consumer(99); 
+   execute xwork21.port1_0314() || util4.port4_4264() || inject3.port3_3867() || config2.port2_0615();
+}
+
+assert xwork ambiguousinterfacefree;
+assert xwork decompositionfree;
+assert xwork circularfree;
+assert xwork poltergeistfree;

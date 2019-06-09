@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.14" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="org.apache.log4j.xml" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/xml" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1106" y="73"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="org.apache.log4j.jmx" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/jmx" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="189" y="148"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="org.apache.log4j.nt" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/nt" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="417" y="120"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="org.apache.log4j.or" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/or" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="905" y="163"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="org.apache.log4j.pattern" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/pattern" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="503" y="252"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="6" language="java" name="org.apache.log4j.net" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/net" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="410" y="-17"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="7" language="java" name="org.apache.log4j.varia" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/varia" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1304" y="88"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="8" language="java" name="org.apache.log4j.jdbc" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/jdbc" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="290" y="253"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="9" language="java" name="org.apache.log4j.helpers" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/helpers" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="839" y="253"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="10" language="java" name="org.apache.log4j.config" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/config" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1111" y="163"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="11" language="java" name="org.apache.log4j.rewrite" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/rewrite" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1291" y="-17"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="12" language="java" name="org.apache.log4j.or.jms" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/or/jms" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="700" y="73"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="13" language="java" name="org.apache.log4j" project="log4j" file="/log4j/src/main/java/org/apache/log4j" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="569" y="459"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="14" language="java" name="org.apache.log4j.or.sax" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/or/sax" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="917" y="73"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="15" language="java" name="org.apache.log4j.spi" project="log4j" 
+    file="/log4j/src/main/java/org/apache/log4j/spi" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="943" y="433"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <dependency id="16">    
+    <bendpoint x="1217" y="247"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="17">    
+    <bendpoint x="1177" y="67"/>    
+    <bendpoint x="1177" y="157"/>    
+    <bendpoint x="1175" y="247"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="18">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="19">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="20">    
+    <bendpoint x="351" y="247"/>    
+    <bendpoint x="351" y="337"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="21">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="22">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="23">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="24">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="25">    
+    <bendpoint x="1387" y="157"/>    
+    <bendpoint x="1366" y="247"/>    
+    <bendpoint x="1366" y="337"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="26">    
+    <bendpoint x="626" y="247"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="27">    
+    <bendpoint x="330" y="337"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="28">    
+    <bendpoint x="1000" y="247"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="29">    
+    <bendpoint x="584" y="247"/>    
+    <bendpoint x="584" y="337"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="30">    
+    <bendpoint x="105" y="67"/>    
+    <bendpoint x="105" y="157"/>    
+    <bendpoint x="105" y="247"/>    
+    <bendpoint x="105" y="337"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="31">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="32">    
+    <bendpoint x="909" y="247"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="33">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="34">    
+    <bendpoint x="1196" y="247"/>    
+    <bendpoint x="1196" y="337"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="35">    
+    <bendpoint x="145" y="247"/>    
+    <bendpoint x="145" y="337"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="36">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="37">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="38">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="39">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="40">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="41">    
+    <bendpoint x="308" y="67"/>    
+    <bendpoint x="308" y="157"/>    
+    <bendpoint x="393" y="247"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="42">    
+    <bendpoint x="1408" y="67"/>    
+    <bendpoint x="1408" y="157"/>    
+    <bendpoint x="1408" y="247"/>    
+    <bendpoint x="1408" y="337"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="43">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="44">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="45">    
+    <bendpoint x="979" y="247"/>    
+    <bendpoint x="979" y="337"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="46">    
+    <bendpoint x="766" y="157"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="47">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="48">    
+    <bendpoint x="372" y="247"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="49">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="50">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="51">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="52">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="53">    
+    <bendpoint x="960" y="157"/>    
+    <bendpoint x="958" y="247"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="54">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="55">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="56">    
+    <bendpoint x="1387" y="247"/>    
+    <bendpoint x="1387" y="337"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="57">    
+    <bendpoint x="766" y="67"/>    
+    <bendpoint x="745" y="157"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="58">    
+    <bendpoint x="841" y="337"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="59">    
+    <bendpoint x="605" y="247"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="60">    
+    <bendpoint x="549" y="67"/>    
+    <bendpoint x="703" y="157"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="61">    
+    <bendpoint x="724" y="157"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="62">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="false">    
+    <attributes public="false" package="true" protected="false" private="false" static="false"/>    
+    <operations public="false" package="true" protected="false" private="false" static="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

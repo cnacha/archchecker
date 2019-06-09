@@ -1,0 +1,36 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component xwork21{
+   port port1_9796() = initial -> exec -> port1_9796(); 
+}
+component impl4{
+   port port4_5590() = initial -> exec -> port4_5590(); 
+}
+component inject3{
+   port port3_3554() = initial -> exec -> port3_3554(); 
+}
+component config2{
+   port port2_2389() = initial -> exec -> port2_2389(); 
+}
+component location5{
+   port port5_2170() = initial -> exec -> port5_2170(); 
+}
+system xwork { 
+   declare conn3_6188 = APIConnector; 
+   declare conn2_0959 = APIConnector; 
+   declare conn5_3571 = APIConnector; 
+   declare conn4_3781 = APIConnector; 
+   attach xwork21.port1_9796() = conn5_3571.consumer(99) <*> conn2_0959.consumer(99) <*> conn4_3781.consumer(99) <*> conn3_6188.consumer(99); 
+   attach impl4.port4_5590() = conn4_3781.provider() <*> conn5_3571.consumer(99) <*> conn2_0959.consumer(99) <*> conn3_6188.consumer(99); 
+   attach inject3.port3_3554() = conn3_6188.provider(); 
+   attach config2.port2_2389() = conn2_0959.provider() <*> conn5_3571.consumer(99) <*> conn3_6188.consumer(99) <*> conn4_3781.consumer(99); 
+   attach location5.port5_2170() = conn5_3571.provider(); 
+   execute xwork21.port1_9796() || impl4.port4_5590() || inject3.port3_3554() || config2.port2_2389() || location5.port5_2170();
+}
+
+assert xwork ambiguousinterfacefree;
+assert xwork decompositionfree;
+assert xwork circularfree;
+assert xwork poltergeistfree;

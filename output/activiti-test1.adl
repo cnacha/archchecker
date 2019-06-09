@@ -1,0 +1,41 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component delegate2{
+   port port2_0621() = initial -> exec -> port2_0621(); 
+}
+component repository6{
+   port port6_8800() = initial -> exec -> port6_8800(); 
+}
+component impl1{
+   port port1_6277() = initial -> exec -> port1_6277(); 
+}
+component cfg4{
+   port port4_8431() = initial -> exec -> port4_8431(); 
+}
+component entity5{
+   port port5_3310() = initial -> exec -> port5_3310(); 
+}
+component runtime3{
+   port port3_9936() = initial -> exec -> port3_9936(); 
+}
+system activiti { 
+   declare conn3_5492 = APIConnector; 
+   declare conn4_1401 = APIConnector; 
+   declare conn1_2234 = APIConnector; 
+   declare conn6_1477 = APIConnector; 
+   declare conn2_2486 = APIConnector; 
+   attach delegate2.port2_0621() = conn2_2486.provider(); 
+   attach repository6.port6_8800() = conn6_1477.provider() <*> conn3_5492.consumer(99); 
+   attach impl1.port1_6277() = conn1_2234.provider() <*> conn4_1401.consumer(99) <*> conn2_2486.consumer(99) <*> conn3_5492.consumer(99) <*> conn6_1477.consumer(99); 
+   attach cfg4.port4_8431() = conn4_1401.provider() <*> conn3_5492.consumer(99) <*> conn2_2486.consumer(99); 
+   attach entity5.port5_3310() = conn3_5492.consumer(99) <*> conn1_2234.consumer(99) <*> conn4_1401.consumer(99) <*> conn6_1477.consumer(99) <*> conn2_2486.consumer(99); 
+   attach runtime3.port3_9936() = conn3_5492.provider(); 
+   execute delegate2.port2_0621() || repository6.port6_8800() || impl1.port1_6277() || cfg4.port4_8431() || entity5.port5_3310() || runtime3.port3_9936();
+}
+
+assert activiti ambiguousinterfacefree;
+assert activiti decompositionfree;
+assert activiti circularfree;
+assert activiti poltergeistfree;

@@ -1,0 +1,36 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component helpers1{
+   port port1_7770() = initial -> exec -> port1_7770(); 
+}
+component net4{
+   port port4_1895() = initial -> exec -> port4_1895(); 
+}
+component spi3{
+   port port3_4017() = initial -> exec -> port3_4017(); 
+}
+component log4j2{
+   port port2_3946() = initial -> exec -> port2_3946(); 
+}
+component or5{
+   port port5_5250() = initial -> exec -> port5_5250(); 
+}
+system log4j { 
+   declare conn1_4996 = APIConnector; 
+   declare conn5_4553 = APIConnector; 
+   declare conn2_4414 = APIConnector; 
+   declare conn3_3377 = APIConnector; 
+   attach helpers1.port1_7770() = conn1_4996.provider() <*> conn3_3377.consumer(99) <*> conn2_4414.consumer(99); 
+   attach net4.port4_1895() = conn3_3377.consumer(99) <*> conn1_4996.consumer(99) <*> conn2_4414.consumer(99); 
+   attach spi3.port3_4017() = conn3_3377.provider() <*> conn5_4553.consumer(99); 
+   attach log4j2.port2_3946() = conn2_4414.provider() <*> conn3_3377.consumer(99); 
+   attach or5.port5_5250() = conn5_4553.provider() <*> conn1_4996.consumer(99) <*> conn3_3377.consumer(99) <*> conn2_4414.consumer(99); 
+   execute helpers1.port1_7770() || net4.port4_1895() || spi3.port3_4017() || log4j2.port2_3946() || or5.port5_5250();
+}
+
+assert log4j ambiguousinterfacefree;
+assert log4j decompositionfree;
+assert log4j circularfree;
+assert log4j poltergeistfree;

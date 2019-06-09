@@ -1,0 +1,26 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component helpers1{
+   port port1_0281() = initial -> exec -> port1_0281(); 
+}
+component spi3{
+   port port3_2647() = initial -> exec -> port3_2647(); 
+}
+component log4j2{
+   port port2_0912() = initial -> exec -> port2_0912(); 
+}
+system log4j { 
+   declare conn2_4749 = APIConnector; 
+   declare conn1_9217 = APIConnector; 
+   attach helpers1.port1_0281() = conn1_9217.provider() <*> conn2_4749.consumer(99); 
+   attach spi3.port3_2647() = conn2_4749.consumer(99) <*> conn1_9217.consumer(99); 
+   attach log4j2.port2_0912() = conn2_4749.provider() <*> conn1_9217.consumer(99); 
+   execute helpers1.port1_0281() || spi3.port3_2647() || log4j2.port2_0912();
+}
+
+assert log4j ambiguousinterfacefree;
+assert log4j decompositionfree;
+assert log4j circularfree;
+assert log4j poltergeistfree;

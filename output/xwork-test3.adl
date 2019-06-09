@@ -1,0 +1,46 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component xwork21{
+   port port1_8029() = initial -> exec -> port1_8029(); 
+}
+component impl4{
+   port port4_3296() = initial -> exec -> port4_3296(); 
+}
+component inject3{
+   port port3_1408() = initial -> exec -> port3_1408(); 
+}
+component config2{
+   port port2_3685() = initial -> exec -> port2_3685(); 
+}
+component impl6{
+   port port6_2202() = initial -> exec -> port6_2202(); 
+}
+component location5{
+   port port5_2831() = initial -> exec -> port5_2831(); 
+}
+component interceptor7{
+   port port7_7051() = initial -> exec -> port7_7051(); 
+}
+system xwork { 
+   declare conn7_2765 = APIConnector; 
+   declare conn6_3815 = APIConnector; 
+   declare conn5_3049 = APIConnector; 
+   declare conn4_5207 = APIConnector; 
+   declare conn1_6785 = APIConnector; 
+   declare conn3_0021 = APIConnector; 
+   attach xwork21.port1_8029() = conn1_6785.provider() <*> conn7_2765.consumer(99) <*> conn3_0021.consumer(99) <*> conn5_3049.consumer(99); 
+   attach impl4.port4_3296() = conn4_5207.provider() <*> conn6_3815.consumer(99) <*> conn5_3049.consumer(99) <*> conn3_0021.consumer(99) <*> conn1_6785.consumer(99); 
+   attach inject3.port3_1408() = conn3_0021.provider(); 
+   attach config2.port2_3685() = conn5_3049.consumer(99) <*> conn4_5207.consumer(99) <*> conn1_6785.consumer(99) <*> conn3_0021.consumer(99); 
+   attach impl6.port6_2202() = conn6_3815.provider() <*> conn3_0021.consumer(99) <*> conn1_6785.consumer(99); 
+   attach location5.port5_2831() = conn5_3049.provider(); 
+   attach interceptor7.port7_7051() = conn7_2765.provider() <*> conn3_0021.consumer(99) <*> conn6_3815.consumer(99); 
+   execute xwork21.port1_8029() || impl4.port4_3296() || inject3.port3_1408() || config2.port2_3685() || impl6.port6_2202() || location5.port5_2831() || interceptor7.port7_7051();
+}
+
+assert xwork ambiguousinterfacefree;
+assert xwork decompositionfree;
+assert xwork circularfree;
+assert xwork poltergeistfree;

@@ -1,0 +1,36 @@
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+component error2{
+   port port2_6515() = initial -> exec -> port2_6515(); 
+}
+component hsqldb1{
+   port port1_2872() = initial -> exec -> port1_2872(); 
+}
+component server5{
+   port port5_7858() = initial -> exec -> port5_7858(); 
+}
+component lib3{
+   port port3_4668() = initial -> exec -> port3_4668(); 
+}
+component navigator4{
+   port port4_0705() = initial -> exec -> port4_0705(); 
+}
+system hsqldb { 
+   declare conn1_2670 = APIConnector; 
+   declare conn5_5146 = APIConnector; 
+   declare conn3_4784 = APIConnector; 
+   declare conn2_6315 = APIConnector; 
+   attach error2.port2_6515() = conn2_6315.provider() <*> conn1_2670.consumer(99) <*> conn3_4784.consumer(99); 
+   attach hsqldb1.port1_2872() = conn1_2670.provider() <*> conn5_5146.consumer(99); 
+   attach server5.port5_7858() = conn5_5146.provider() <*> conn1_2670.consumer(99) <*> conn3_4784.consumer(99); 
+   attach lib3.port3_4668() = conn3_4784.provider() <*> conn1_2670.consumer(99); 
+   attach navigator4.port4_0705() = conn2_6315.consumer(99) <*> conn3_4784.consumer(99) <*> conn1_2670.consumer(99); 
+   execute error2.port2_6515() || hsqldb1.port1_2872() || server5.port5_7858() || lib3.port3_4668() || navigator4.port4_0705();
+}
+
+assert hsqldb ambiguousinterfacefree;
+assert hsqldb decompositionfree;
+assert hsqldb circularfree;
+assert hsqldb poltergeistfree;
