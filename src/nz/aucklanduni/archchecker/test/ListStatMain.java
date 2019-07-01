@@ -15,7 +15,7 @@ import nz.aucklanduni.archchecker.core.ADLConverter;
 import nz.aucklanduni.archchecker.core.AbstractSmellChecker;
 import nz.aucklanduni.archchecker.object.ClassDiagram;
 
-public class ConvertADLMain {
+public class ListStatMain {
 
 	private static final String MODNAME = "xerces";
 	
@@ -35,7 +35,7 @@ public class ConvertADLMain {
 				File [] files = dir.listFiles(new FilenameFilter() {
 				    @Override
 				    public boolean accept(File dir, String name) {
-				        return name.contains(modName+"-test");
+				        return name.contains(modName+".ucls");
 				    }
 				});
 				

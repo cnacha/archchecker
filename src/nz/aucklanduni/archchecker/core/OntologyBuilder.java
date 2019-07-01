@@ -83,6 +83,10 @@ public class OntologyBuilder {
 	public OWLDataFactory getFactory() {
 		return factory;
 	}
+	
+	public int getNumberOfIndividuals() {
+		return ontology.getIndividualsInSignature().size();
+	}
 
 
 

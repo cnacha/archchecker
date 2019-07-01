@@ -26,9 +26,9 @@ system springwebmvc {
    attach method5.port5_2014() = conn2_9294.consumer(99) <*> conn3_5888.consumer(99); 
    attach context4.port4_0139() = conn4_4328.provider() <*> conn3_5888.consumer(99); 
    attach servlet2.port2_3128() = conn2_9294.provider() <*> conn4_4328.consumer(99); 
-   //execute web3.port3_7480() || mvc1.port1_1296() || method5.port5_2014() || context4.port4_0139() || servlet2.port2_3128();
-  //  execute web3.port3_7480() || method5.port5_2014()|| context4.port4_0139() || servlet2.port2_3128() ;
-     execute web3.port3_7480() || mvc1.port1_1296()  || context4.port4_0139() || servlet2.port2_3128() ;
+   execute web3.port3_7480() || mvc1.port1_1296() || method5.port5_2014() || context4.port4_0139() || servlet2.port2_3128();
+ //   execute web3.port3_7480() || method5.port5_2014()|| context4.port4_0139() || servlet2.port2_3128() ;
+  //   execute web3.port3_7480() || mvc1.port1_1296()  || context4.port4_0139() || servlet2.port2_3128() ;
 }
 
 assert springwebmvc ambiguousinterfacefree;

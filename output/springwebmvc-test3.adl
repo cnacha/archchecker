@@ -35,9 +35,9 @@ system springwebmvc {
    attach view5.port5_8030() = conn7_9661.consumer(99) <*> conn2_9707.consumer(99) <*> conn4_8862.consumer(99); 
    attach context4.port4_8286() = conn4_8862.provider(); 
    attach servlet2.port2_1239() = conn2_9707.provider() <*> conn6_7870.consumer(99) <*> conn7_9661.consumer(99) <*> conn4_8862.consumer(99); 
-  // execute multipart6.port6_8371() || handler3.port3_6225() || mvc1.port1_6418() || util7.port7_4160() || view5.port5_8030() || context4.port4_8286() || servlet2.port2_1239();
-   execute multipart6.port6_8371() || handler3.port3_6225() || util7.port7_4160() || context4.port4_8286() || servlet2.port2_1239();
- //  execute multipart6.port6_8371() || mvc1.port1_6418() || util7.port7_4160() || context4.port4_8286() || servlet2.port2_1239();
+   execute multipart6.port6_8371() || handler3.port3_6225() || mvc1.port1_6418() || util7.port7_4160() || view5.port5_8030() || context4.port4_8286() || servlet2.port2_1239();
+  // execute multipart6.port6_8371() || handler3.port3_6225() || util7.port7_4160() || context4.port4_8286() || servlet2.port2_1239();
+//   execute multipart6.port6_8371() || mvc1.port1_6418() || util7.port7_4160() || context4.port4_8286() || servlet2.port2_1239();
 //   execute multipart6.port6_8371() || view5.port5_8030() || util7.port7_4160() || context4.port4_8286() || servlet2.port2_1239();
 }
 

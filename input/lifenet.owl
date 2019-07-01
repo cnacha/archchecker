@@ -6,140 +6,125 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/user/ontologies/2561/0/arch-library">
-    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2561/0/arch-library#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2561/0/arch-library"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#carepub"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CnS:Server"/>
+        <NamedIndividual IRI="#ptstore"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Subscribe"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasInterface"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LinkOverload"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Port"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pinpoint"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasEventTrail"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DataOut"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#RP:DataAccessor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Interface"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Connector"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasAttachment"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Subscriber"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#APIConnector"/>
+        <NamedIndividual IRI="#TestSuite"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Consumer"/>
+        <NamedIndividual IRI="#emcenterstore"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Responder"/>
+        <NamedIndividual IRI="#caresub"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Access"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isInterfaceOf"/>
+        <NamedIndividual IRI="#LifeCare"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#geosync"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#callreq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alert"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#positionwire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Practitioner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#receive"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Request"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#consumedByNum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Component"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Input"/>
+        <Class IRI="#Accessor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Response"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ptaccess"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasId"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Provider"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#callToNum"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CnS:Client"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Publisher"/>
+        <DataProperty IRI="#callToNum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CallCenter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ptaccessor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Publish"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UsedLink"/>
+        <NamedIndividual IRI="#guardpub"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LinkedComp"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#API:Consumer"/>
+        <Class IRI="#UsedInterface"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Store"/>
+        <Class IRI="#DBConnector"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UnusedLink"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CnSConnector"/>
+        <NamedIndividual IRI="#locaccaccess"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPort"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PnS:Subscriber"/>
+        <Class IRI="#CnSConnector"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DataWriteConnector"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#API:Provider"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasLink"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Output"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DataReadConnector"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LavaFlow"/>
+        <NamedIndividual IRI="#pgwire"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Smell"/>
@@ -148,157 +133,217 @@
         <ObjectProperty IRI="#isRoleOf"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#dispatchres"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#emcenterwire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RP:DataRepository"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#emerreq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#geoaccess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Query"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Requester"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pgaccess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PnSConnector"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PatientRecord"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#locaccesswire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#emcenteraccessor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LifeBand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CnS:Server"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RequestDispatcher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LinkOverload"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#accept"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ptwire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interface"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAttachment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#APIConnector"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EmergencyCenter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Responder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInterfaceOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dispatchreq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pgstore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LifeGuard"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#consumedByNum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Component"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#soswire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#posres"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Provider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnusedInterface"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Geolocation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#guardsub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publisher"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#incomingLink"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sospub"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#locaccstore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#API:Consumer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Store"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#carenotiwire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SOSGateway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PnS:Subscriber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#API:Provider"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLink"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sossub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LavaFlow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pgaccessor"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasProcessDef"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isPortOf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DataIn"/>
+        <DataProperty IRI="#outgoingLink"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dispatchwire"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EAConnector"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RP:DataRepository"/>
+        <NamedIndividual IRI="#emaccess"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#gnotify"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Reader"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Requester"/>
+        <NamedIndividual IRI="#posreq"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Provide"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PnS:Publisher"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Provide"/>
+        <NamedIndividual IRI="#locate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#guardnotiwire"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isAttachmentOf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PnSConnector"/>
+        <NamedIndividual IRI="#cnotify"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#testrun"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Consume"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#conn1_dummy_78"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#conn2_4938"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#providerconn6_6761"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#consumerconn4_7757"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#impl1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cfg4"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#port4_6432"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#consumerconn2_4938"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#publish1_2518"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#publisherconn2_dummy_59"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#conn4_7757"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#publish2_3611"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#entity5"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#publisherconn1_dummy_78"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#port2_5375"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#repository6"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#providerconn2_4938"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#subscriberconn2_dummy_59"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#publish1_2539"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#providerconn4_7757"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#subscriberconn1_dummy_78"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#providerconn3_4880"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#consumerconn6_6761"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#port1_0415"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#publish2_0951"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#conn6_6761"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#providerconn1_6082"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#conn2_dummy_59"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#consumerconn1_6082"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#port5_8215"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#conn1_6082"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#runtime3"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#delegate2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#consumerconn3_4880"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#port3_0774"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#port6_9190"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#conn3_4880"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#APIConnector"/>
@@ -313,6 +358,13 @@
                 <Class IRI="#Provider"/>
             </ObjectMinCardinality>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Access"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttachment"/>
+            <Class IRI="#Store"/>
+        </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#CnSConnector"/>
@@ -336,68 +388,47 @@
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#DataReadConnector"/>
+        <Class IRI="#DBConnector"/>
         <ObjectIntersectionOf>
             <Class IRI="#Connector"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#hasRole"/>
-                <Class IRI="#Reader"/>
+                <Class IRI="#Accessor"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#hasRole"/>
                 <Class IRI="#Store"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#DataWriteConnector"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Connector"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasRole"/>
-                <Class IRI="#Store"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasRole"/>
-                <Class IRI="#Writer"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Input"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Port"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasAttachment"/>
-                <Class IRI="#DataIn"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#LavaFlow"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPort"/>
-            <Class IRI="#UnusedLink"/>
-        </ObjectSomeValuesFrom>
+        <ObjectIntersectionOf>
+            <Class IRI="#Component"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasPort"/>
+                <Class IRI="#UnusedInterface"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#LinkOverload"/>
         <ObjectIntersectionOf>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#callToNum"/>
+                <DataProperty IRI="#incomingLink"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
                     </FacetRestriction>
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#consumedByNum"/>
+                <DataProperty IRI="#outgoingLink"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
                     </FacetRestriction>
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
@@ -409,17 +440,7 @@
             <Class IRI="#Component"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#hasPort"/>
-                <Class IRI="#UsedLink"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Output"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Port"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasAttachment"/>
-                <Class IRI="#DataOut"/>
+                <Class IRI="#UsedInterface"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -455,6 +476,13 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#Query"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttachment"/>
+            <Class IRI="#Accessor"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#Request"/>
         <ObjectIntersectionOf>
             <Class IRI="#Port"/>
@@ -485,7 +513,7 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#UnusedLink"/>
+        <Class IRI="#UnusedInterface"/>
         <ObjectIntersectionOf>
             <DataSomeValuesFrom>
                 <DataProperty IRI="#callToNum"/>
@@ -508,16 +536,13 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#UsedLink"/>
+        <Class IRI="#UsedInterface"/>
         <ObjectIntersectionOf>
             <Class IRI="#Port"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#hasAttachment"/>
                 <Class IRI="#Role"/>
             </ObjectSomeValuesFrom>
-            <ObjectMinCardinality cardinality="0">
-                <ObjectProperty IRI="#hasAttachment"/>
-            </ObjectMinCardinality>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -586,16 +611,7 @@
             <Class IRI="#Component"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#hasPort"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#Port"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasAttachment"/>
-                        <ObjectUnionOf>
-                            <Class IRI="#Reader"/>
-                            <Class IRI="#Writer"/>
-                        </ObjectUnionOf>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
+                <Class IRI="#Query"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -605,19 +621,21 @@
             <Class IRI="#Component"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#hasPort"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#Port"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasAttachment"/>
-                        <Class IRI="#Store"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
+                <Class IRI="#Access"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#APIConnector"/>
         <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Access"/>
+        <Class IRI="#Port"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accessor"/>
+        <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Consume"/>
@@ -628,20 +646,8 @@
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DataIn"/>
-        <Class IRI="#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DataOut"/>
-        <Class IRI="#Role"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#EAConnector"/>
         <Class IRI="#Smell"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LavaFlow"/>
-        <Class IRI="#Component"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LavaFlow"/>
@@ -672,8 +678,8 @@
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Reader"/>
-        <Class IRI="#Role"/>
+        <Class IRI="#Query"/>
+        <Class IRI="#Port"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Requester"/>
@@ -696,20 +702,16 @@
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#UnusedLink"/>
+        <Class IRI="#UnusedInterface"/>
         <Class IRI="#Port"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#UnusedLink"/>
+        <Class IRI="#UnusedInterface"/>
         <Class IRI="#Smell"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#UsedLink"/>
+        <Class IRI="#UsedInterface"/>
         <Class IRI="#Port"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Writer"/>
-        <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#API:Consumer"/>
@@ -720,13 +722,19 @@
         <Class IRI="#Component"/>
     </SubClassOf>
     <DisjointClasses>
+        <Class IRI="#Accessor"/>
+        <Class IRI="#Consumer"/>
+        <Class IRI="#Provider"/>
+        <Class IRI="#Publisher"/>
+        <Class IRI="#Requester"/>
+        <Class IRI="#Responder"/>
+        <Class IRI="#Store"/>
+        <Class IRI="#Subscriber"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Component"/>
         <Class IRI="#Connector"/>
         <Class IRI="#Interface"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#DataReadConnector"/>
-        <Class IRI="#DataWriteConnector"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#LavaFlow"/>
@@ -737,10 +745,6 @@
         <Class IRI="#Role"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Reader"/>
-        <Class IRI="#Writer"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#Request"/>
         <Class IRI="#Response"/>
     </DisjointClasses>
@@ -749,367 +753,455 @@
         <Class IRI="#Responder"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#UnusedLink"/>
-        <Class IRI="#UsedLink"/>
+        <Class IRI="#UnusedInterface"/>
+        <Class IRI="#UsedInterface"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#Consumer"/>
-        <NamedIndividual IRI="#consumerconn1_6082"/>
+        <Class IRI="#LavaFlow"/>
+        <NamedIndividual IRI="#TestSuite"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Consumer"/>
-        <NamedIndividual IRI="#consumerconn2_4938"/>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#accept"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Consumer"/>
-        <NamedIndividual IRI="#consumerconn3_4880"/>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#alert"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Consumer"/>
-        <NamedIndividual IRI="#consumerconn4_7757"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Consumer"/>
-        <NamedIndividual IRI="#consumerconn6_6761"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Provider"/>
-        <NamedIndividual IRI="#providerconn1_6082"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Provider"/>
-        <NamedIndividual IRI="#providerconn2_4938"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Provider"/>
-        <NamedIndividual IRI="#providerconn3_4880"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Provider"/>
-        <NamedIndividual IRI="#providerconn4_7757"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Provider"/>
-        <NamedIndividual IRI="#providerconn6_6761"/>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#callreq"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Publisher"/>
-        <NamedIndividual IRI="#publisherconn1_dummy_78"/>
+        <NamedIndividual IRI="#carepub"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Subscriber"/>
+        <NamedIndividual IRI="#caresub"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#cnotify"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Requester"/>
+        <NamedIndividual IRI="#dispatchreq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Responder"/>
+        <NamedIndividual IRI="#dispatchres"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Accessor"/>
+        <NamedIndividual IRI="#emcenteraccessor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Store"/>
+        <NamedIndividual IRI="#emcenterstore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#emerreq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#geoaccess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#geosync"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#gnotify"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Publisher"/>
-        <NamedIndividual IRI="#publisherconn2_dummy_59"/>
+        <NamedIndividual IRI="#guardpub"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Subscriber"/>
-        <NamedIndividual IRI="#subscriberconn1_dummy_78"/>
+        <NamedIndividual IRI="#guardsub"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Accessor"/>
+        <NamedIndividual IRI="#locaccaccess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Store"/>
+        <NamedIndividual IRI="#locaccstore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#locate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#pgaccess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Accessor"/>
+        <NamedIndividual IRI="#pgaccessor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Store"/>
+        <NamedIndividual IRI="#pgstore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#pinpoint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Requester"/>
+        <NamedIndividual IRI="#posreq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Responder"/>
+        <NamedIndividual IRI="#posres"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#ptaccess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Accessor"/>
+        <NamedIndividual IRI="#ptaccessor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Store"/>
+        <NamedIndividual IRI="#ptstore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#sos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Publisher"/>
+        <NamedIndividual IRI="#sospub"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Subscriber"/>
-        <NamedIndividual IRI="#subscriberconn2_dummy_59"/>
+        <NamedIndividual IRI="#sossub"/>
     </ClassAssertion>
-    <SameIndividual>
-        <NamedIndividual IRI="#cfg4"/>
-    </SameIndividual>
-    <SameIndividual>
-        <NamedIndividual IRI="#delegate2"/>
-    </SameIndividual>
-    <SameIndividual>
-        <NamedIndividual IRI="#entity5"/>
-    </SameIndividual>
-    <SameIndividual>
-        <NamedIndividual IRI="#impl1"/>
-    </SameIndividual>
-    <SameIndividual>
-        <NamedIndividual IRI="#repository6"/>
-    </SameIndividual>
-    <SameIndividual>
-        <NamedIndividual IRI="#runtime3"/>
-    </SameIndividual>
+    <ClassAssertion>
+        <Class IRI="#Port"/>
+        <NamedIndividual IRI="#testrun"/>
+    </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
-        <NamedIndividual IRI="#cfg4"/>
-        <NamedIndividual IRI="#port4_6432"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn1_6082"/>
-        <NamedIndividual IRI="#consumerconn1_6082"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn1_6082"/>
-        <NamedIndividual IRI="#providerconn1_6082"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn1_dummy_78"/>
-        <NamedIndividual IRI="#publisherconn1_dummy_78"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn1_dummy_78"/>
-        <NamedIndividual IRI="#subscriberconn1_dummy_78"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn2_4938"/>
-        <NamedIndividual IRI="#consumerconn2_4938"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn2_4938"/>
-        <NamedIndividual IRI="#providerconn2_4938"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn2_dummy_59"/>
-        <NamedIndividual IRI="#publisherconn2_dummy_59"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn2_dummy_59"/>
-        <NamedIndividual IRI="#subscriberconn2_dummy_59"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn3_4880"/>
-        <NamedIndividual IRI="#consumerconn3_4880"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn3_4880"/>
-        <NamedIndividual IRI="#providerconn3_4880"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn4_7757"/>
-        <NamedIndividual IRI="#consumerconn4_7757"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn4_7757"/>
-        <NamedIndividual IRI="#providerconn4_7757"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn6_6761"/>
-        <NamedIndividual IRI="#consumerconn6_6761"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn6_6761"/>
-        <NamedIndividual IRI="#providerconn6_6761"/>
+        <NamedIndividual IRI="#CallCenter"/>
+        <NamedIndividual IRI="#callreq"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
-        <NamedIndividual IRI="#delegate2"/>
-        <NamedIndividual IRI="#port2_5375"/>
+        <NamedIndividual IRI="#CallCenter"/>
+        <NamedIndividual IRI="#receive"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
-        <NamedIndividual IRI="#delegate2"/>
-        <NamedIndividual IRI="#publish2_3611"/>
+        <NamedIndividual IRI="#EmergencyCenter"/>
+        <NamedIndividual IRI="#emaccess"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
-        <NamedIndividual IRI="#entity5"/>
-        <NamedIndividual IRI="#port5_8215"/>
+        <NamedIndividual IRI="#Geolocation"/>
+        <NamedIndividual IRI="#geoaccess"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
-        <NamedIndividual IRI="#entity5"/>
-        <NamedIndividual IRI="#publish1_2539"/>
+        <NamedIndividual IRI="#LifeBand"/>
+        <NamedIndividual IRI="#alert"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
-        <NamedIndividual IRI="#impl1"/>
-        <NamedIndividual IRI="#port1_0415"/>
+        <NamedIndividual IRI="#LifeBand"/>
+        <NamedIndividual IRI="#pinpoint"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
-        <NamedIndividual IRI="#impl1"/>
-        <NamedIndividual IRI="#publish1_2518"/>
+        <NamedIndividual IRI="#LifeCare"/>
+        <NamedIndividual IRI="#cnotify"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
-        <NamedIndividual IRI="#impl1"/>
-        <NamedIndividual IRI="#publish2_0951"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port1_0415"/>
-        <NamedIndividual IRI="#consumerconn2_4938"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port1_0415"/>
-        <NamedIndividual IRI="#consumerconn3_4880"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port1_0415"/>
-        <NamedIndividual IRI="#consumerconn4_7757"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port1_0415"/>
-        <NamedIndividual IRI="#consumerconn6_6761"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port1_0415"/>
-        <NamedIndividual IRI="#providerconn1_6082"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port2_5375"/>
-        <NamedIndividual IRI="#providerconn2_4938"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port3_0774"/>
-        <NamedIndividual IRI="#providerconn3_4880"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port4_6432"/>
-        <NamedIndividual IRI="#consumerconn2_4938"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port4_6432"/>
-        <NamedIndividual IRI="#consumerconn3_4880"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port4_6432"/>
-        <NamedIndividual IRI="#providerconn4_7757"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port5_8215"/>
-        <NamedIndividual IRI="#consumerconn1_6082"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port5_8215"/>
-        <NamedIndividual IRI="#consumerconn2_4938"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port5_8215"/>
-        <NamedIndividual IRI="#consumerconn3_4880"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port5_8215"/>
-        <NamedIndividual IRI="#consumerconn4_7757"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port5_8215"/>
-        <NamedIndividual IRI="#consumerconn6_6761"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port6_9190"/>
-        <NamedIndividual IRI="#consumerconn3_4880"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port6_9190"/>
-        <NamedIndividual IRI="#providerconn6_6761"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#publish1_2518"/>
-        <NamedIndividual IRI="#publisherconn1_dummy_78"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#publish1_2539"/>
-        <NamedIndividual IRI="#subscriberconn1_dummy_78"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#publish2_0951"/>
-        <NamedIndividual IRI="#subscriberconn2_dummy_59"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#publish2_3611"/>
-        <NamedIndividual IRI="#publisherconn2_dummy_59"/>
+        <NamedIndividual IRI="#LifeGuard"/>
+        <NamedIndividual IRI="#gnotify"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
-        <NamedIndividual IRI="#repository6"/>
-        <NamedIndividual IRI="#port6_9190"/>
+        <NamedIndividual IRI="#PatientRecord"/>
+        <NamedIndividual IRI="#ptaccess"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
-        <NamedIndividual IRI="#runtime3"/>
-        <NamedIndividual IRI="#port3_0774"/>
+        <NamedIndividual IRI="#Practitioner"/>
+        <NamedIndividual IRI="#pgaccess"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#RequestDispatcher"/>
+        <NamedIndividual IRI="#accept"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#SOSGateway"/>
+        <NamedIndividual IRI="#emerreq"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#SOSGateway"/>
+        <NamedIndividual IRI="#geosync"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#SOSGateway"/>
+        <NamedIndividual IRI="#locate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#SOSGateway"/>
+        <NamedIndividual IRI="#sos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#TestSuite"/>
+        <NamedIndividual IRI="#testrun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#accept"/>
+        <NamedIndividual IRI="#carepub"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#accept"/>
+        <NamedIndividual IRI="#dispatchres"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#accept"/>
+        <NamedIndividual IRI="#emcenteraccessor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#accept"/>
+        <NamedIndividual IRI="#guardpub"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#alert"/>
+        <NamedIndividual IRI="#sospub"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#callreq"/>
+        <NamedIndividual IRI="#dispatchreq"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#carenotiwire"/>
+        <NamedIndividual IRI="#carepub"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#carenotiwire"/>
+        <NamedIndividual IRI="#caresub"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#cnotify"/>
+        <NamedIndividual IRI="#caresub"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#cnotify"/>
+        <NamedIndividual IRI="#ptaccessor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#dispatchwire"/>
+        <NamedIndividual IRI="#dispatchreq"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#dispatchwire"/>
+        <NamedIndividual IRI="#dispatchres"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#emaccess"/>
+        <NamedIndividual IRI="#emcenterstore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#emaccess"/>
+        <NamedIndividual IRI="#pgaccessor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#emcenterwire"/>
+        <NamedIndividual IRI="#emcenteraccessor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#emcenterwire"/>
+        <NamedIndividual IRI="#emcenterstore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#emerreq"/>
+        <NamedIndividual IRI="#dispatchreq"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#geoaccess"/>
+        <NamedIndividual IRI="#locaccstore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#geoaccess"/>
+        <NamedIndividual IRI="#ptaccessor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#geosync"/>
+        <NamedIndividual IRI="#locaccaccess"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#gnotify"/>
+        <NamedIndividual IRI="#guardsub"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#gnotify"/>
+        <NamedIndividual IRI="#ptaccessor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#guardnotiwire"/>
+        <NamedIndividual IRI="#guardpub"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#guardnotiwire"/>
+        <NamedIndividual IRI="#guardsub"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#locaccesswire"/>
+        <NamedIndividual IRI="#locaccaccess"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#locaccesswire"/>
+        <NamedIndividual IRI="#locaccstore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#locate"/>
+        <NamedIndividual IRI="#posres"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#pgaccess"/>
+        <NamedIndividual IRI="#pgstore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#pgwire"/>
+        <NamedIndividual IRI="#pgaccessor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#pgwire"/>
+        <NamedIndividual IRI="#pgstore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#pinpoint"/>
+        <NamedIndividual IRI="#posreq"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#positionwire"/>
+        <NamedIndividual IRI="#posreq"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#positionwire"/>
+        <NamedIndividual IRI="#posres"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#ptaccess"/>
+        <NamedIndividual IRI="#locaccaccess"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#ptaccess"/>
+        <NamedIndividual IRI="#ptstore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#ptwire"/>
+        <NamedIndividual IRI="#ptaccessor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#ptwire"/>
+        <NamedIndividual IRI="#ptstore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#sos"/>
+        <NamedIndividual IRI="#dispatchreq"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#sos"/>
+        <NamedIndividual IRI="#sossub"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#soswire"/>
+        <NamedIndividual IRI="#sospub"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#soswire"/>
+        <NamedIndividual IRI="#sossub"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#callToNum"/>
-        <NamedIndividual IRI="#port1_0415"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+        <DataProperty IRI="#incomingLink"/>
+        <NamedIndividual IRI="#RequestDispatcher"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#consumedByNum"/>
-        <NamedIndividual IRI="#port1_0415"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#callToNum"/>
-        <NamedIndividual IRI="#port2_5375"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#consumedByNum"/>
-        <NamedIndividual IRI="#port2_5375"/>
+        <DataProperty IRI="#outgoingLink"/>
+        <NamedIndividual IRI="#RequestDispatcher"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#callToNum"/>
-        <NamedIndividual IRI="#port3_0774"/>
+        <NamedIndividual IRI="#receive"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#consumedByNum"/>
-        <NamedIndividual IRI="#port3_0774"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#callToNum"/>
-        <NamedIndividual IRI="#port4_6432"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#consumedByNum"/>
-        <NamedIndividual IRI="#port4_6432"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#callToNum"/>
-        <NamedIndividual IRI="#port5_8215"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#consumedByNum"/>
-        <NamedIndividual IRI="#port5_8215"/>
+        <NamedIndividual IRI="#receive"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#callToNum"/>
-        <NamedIndividual IRI="#port6_9190"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <NamedIndividual IRI="#testrun"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#consumedByNum"/>
-        <NamedIndividual IRI="#port6_9190"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+        <NamedIndividual IRI="#testrun"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasAttachment"/>
@@ -1173,10 +1265,6 @@
         <ObjectProperty IRI="#hasRole"/>
         <Class IRI="#Connector"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasAttachment"/>
-        <Class IRI="#Role"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasLink"/>
         <Class IRI="#Connector"/>
@@ -1191,6 +1279,10 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasProcessDef"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#incomingLink"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyRange>
@@ -1205,112 +1297,6 @@
         <DataProperty IRI="#hasProcessDef"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
-    <DLSafeRule>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Component"/>
-                <Variable IRI="urn:swrl#comp2"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#Component"/>
-                <Variable IRI="urn:swrl#comp1"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasAttachment"/>
-                <Variable IRI="urn:swrl#p2"/>
-                <Variable IRI="urn:swrl#pub"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasAttachment"/>
-                <Variable IRI="urn:swrl#p4"/>
-                <Variable IRI="urn:swrl#sub"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasAttachment"/>
-                <Variable IRI="urn:swrl#p1"/>
-                <Variable IRI="urn:swrl#con"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasAttachment"/>
-                <Variable IRI="urn:swrl#p3"/>
-                <Variable IRI="urn:swrl#pro"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isPortOf"/>
-                <Variable IRI="urn:swrl#p1"/>
-                <Variable IRI="urn:swrl#comp1"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isPortOf"/>
-                <Variable IRI="urn:swrl#p4"/>
-                <Variable IRI="urn:swrl#comp2"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isPortOf"/>
-                <Variable IRI="urn:swrl#p2"/>
-                <Variable IRI="urn:swrl#comp1"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isPortOf"/>
-                <Variable IRI="urn:swrl#p3"/>
-                <Variable IRI="urn:swrl#comp2"/>
-            </ObjectPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#PnSConnector"/>
-                <Variable IRI="urn:swrl#pns"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasRole"/>
-                <Variable IRI="urn:swrl#pns"/>
-                <Variable IRI="urn:swrl#sub"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasRole"/>
-                <Variable IRI="urn:swrl#pns"/>
-                <Variable IRI="urn:swrl#pub"/>
-            </ObjectPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#Publisher"/>
-                <Variable IRI="urn:swrl#pub"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#Subscriber"/>
-                <Variable IRI="urn:swrl#sub"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#APIConnector"/>
-                <Variable IRI="urn:swrl#cns"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasRole"/>
-                <Variable IRI="urn:swrl#cns"/>
-                <Variable IRI="urn:swrl#con"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasRole"/>
-                <Variable IRI="urn:swrl#cns"/>
-                <Variable IRI="urn:swrl#pro"/>
-            </ObjectPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#Consumer"/>
-                <Variable IRI="urn:swrl#con"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#Provider"/>
-                <Variable IRI="urn:swrl#pro"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <ClassAtom>
-                <Class IRI="#EAConnector"/>
-                <Variable IRI="urn:swrl#pns"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#EAConnector"/>
-                <Variable IRI="urn:swrl#cns"/>
-            </ClassAtom>
-        </Head>
-    </DLSafeRule>
     <DLSafeRule>
         <Annotation>
             <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
@@ -1415,6 +1401,112 @@
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Provider"/>
+                <Variable IRI="urn:swrl#pro"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#EAConnector"/>
+                <Variable IRI="urn:swrl#pns"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#EAConnector"/>
+                <Variable IRI="urn:swrl#cns"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Component"/>
+                <Variable IRI="urn:swrl#comp2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Component"/>
+                <Variable IRI="urn:swrl#comp1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="urn:swrl#p2"/>
+                <Variable IRI="urn:swrl#pub"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="urn:swrl#p4"/>
+                <Variable IRI="urn:swrl#sub"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="urn:swrl#p1"/>
+                <Variable IRI="urn:swrl#con"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="urn:swrl#p3"/>
+                <Variable IRI="urn:swrl#pro"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="urn:swrl#p1"/>
+                <Variable IRI="urn:swrl#comp1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="urn:swrl#p4"/>
+                <Variable IRI="urn:swrl#comp2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="urn:swrl#p2"/>
+                <Variable IRI="urn:swrl#comp1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="urn:swrl#p3"/>
+                <Variable IRI="urn:swrl#comp2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#PnSConnector"/>
+                <Variable IRI="urn:swrl#pns"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="urn:swrl#pns"/>
+                <Variable IRI="urn:swrl#sub"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="urn:swrl#pns"/>
+                <Variable IRI="urn:swrl#pub"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Publisher"/>
+                <Variable IRI="urn:swrl#pub"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Subscriber"/>
+                <Variable IRI="urn:swrl#sub"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#CnSConnector"/>
+                <Variable IRI="urn:swrl#cns"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="urn:swrl#cns"/>
+                <Variable IRI="urn:swrl#con"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="urn:swrl#cns"/>
+                <Variable IRI="urn:swrl#pro"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Requester"/>
+                <Variable IRI="urn:swrl#con"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Responder"/>
                 <Variable IRI="urn:swrl#pro"/>
             </ClassAtom>
         </Body>

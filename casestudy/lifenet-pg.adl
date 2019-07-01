@@ -1,0 +1,96 @@
+﻿connector CSConnector {
+	role client(j) = request->req!j->res?j-> process -> client(j);  
+	role server()  = req?j -> invoke -> process -> res!j->server();
+}
+
+connector DBConnector {
+	role accessor(j) = request->req!j->res?j-> process -> accessor(j);  
+	role repository()  = req?j -> query -> process -> res!j->repository();
+}
+
+connector PSConnector {
+	role publisher(j) =  process -> pub!j  -> Stop;
+	role subscriber() =   pub?j -> process -> subscriber();
+}
+
+
+component BackupService {
+	port backup() = execute -> backup();
+}
+
+component SystemMonitor {
+	port view() = display -> view();
+}
+
+component JobScheduler {
+	port run() = execute -> run();
+}
+
+
+component EventLogger {
+ 	port alog() = write -> complete -> log();
+ 	port slog() = write -> complete -> log();
+}
+
+component ActivityLogger {
+	port actlog() = write -> complete -> actlog();
+}
+
+component SystemLogger {
+	port syslog() = write -> complete -> syslog();
+}
+
+system LifeNet {
+	declare positionwire = CSConnector;
+	declare soswire = PSConnector;
+	declare locaccesswire = DBConnector;
+	declare dispatchwire = CSConnector;
+	declare guardnotiwire = PSConnector;
+	declare carenotiwire = PSConnector;
+	declare emcenterwire = DBConnector;
+	declare pgwire = DBConnector;
+	declare ptwire = DBConnector;
+	declare alogwire = PSConnector;
+	declare slogwire = PSConnector;
+	declare actlogwire = CSConnector;
+	declare syslogwire = CSConnector;
+	
+	// POSITIONING process for CD
+//	attach LifeBand.pinpoint() = positionwire.client(99) 
+//	attach SOSGateway.locate() = positionwire.server() <*>   locaccesswire.accessor(99);
+//	attach Geolocation.geoaccess() = locaccesswire.repository() <*>  ptwire.accessor(98);
+//	attach PatientRecord.ptaccess() = ptwire.repository() <*>   locaccesswire.accessor(97);
+
+//	execute LifeBand.pinpoint() || SOSGateway.locate() || Geolocation.geoaccess() || PatientRecord.ptaccess();
+	
+	
+	// POSITIONING process for PG
+	attach BackupService.backup() = slogwire.publisher(81);
+	attach JobScheduler.run() = alogwire.publisher(82)
+	attach SystemMonitor.view() = slogwire.publisher(83);
+	attach EventLogger.alog() = alogwire.subscriber() <*> actlogwire.client(85) 
+	attach EventLogger.slog() = slogwire.subscriber() <*> syslogwire.client(86);
+	attach ActivityLogger.actlog() = actlogwire.server();
+	attach SystemLogger.syslog() = syslogwire.server();
+	execute BackupService.backup() || JobScheduler.run() || SystemMonitor.view() || EventLogger.alog() || EventLogger.slog() || ActivityLogger.actlog() || SystemLogger.syslog();
+	
+	
+	// ALERT process for AI (RequestDispatcher) & FD (EmergencyCenter->Practitioner)
+//	attach LifeBand.alert() = soswire.publisher(98);
+//	attach SOSGateway.sos() = soswire.subscriber() <*> dispatchwire.client(97);
+//	attach CallCenter.forward() = dispatchwire.client(96);
+//	attach RequestDispatcher.accept() = dispatchwire.server() <*> emcenterwire.accessor(81) <*> guardnotiwire.publisher(95); <*> carenotiwire.publisher(94);
+//	attach LifeGuard.gnotify() = guardnotiwire.subscriber()  ;
+//   attach LifeCare.cnotify() = carenotiwire.subscriber() ;
+//    attach EmergencyCenter.emaccess() = emcenterwire.repository() <*> pgwire.accessor(82);
+//   attach Practitioner.pgaccess() = pgwire.repository();
+//	execute  LifeBand.alert() || SOSGateway.sos() || CallCenter.forward() || RequestDispatcher.accept() || LifeGuard.gnotify() || LifeCare.cnotify() || EmergencyCenter.emaccess() || Practitioner.pgaccess();
+
+//	execute LifeBand.pinpoint() || SOSGateway.locate() || LifeBand.alert() || Geolocation.access() || SOSGateway.sos() || CallCenter.forward() || RequestDispatcher.accept() || LifeGuard.notify();
+	
+}
+
+assert LifeNet circularfree;
+assert LifeNet ambiguousinterfacefree;
+assert LifeNet decompositionfree;
+assert LifeNet poltergeistfree;

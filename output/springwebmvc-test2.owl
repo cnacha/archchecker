@@ -190,61 +190,91 @@
         <Class IRI="#Consume"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#port2_3128"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#providerconn4_4328"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#providerconn3_5888"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#port5_2014"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#port1_1296"/>
+        <NamedIndividual IRI="#conn2_dummy_86"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#web3"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#providerconn2_9294"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#conn2_9294"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#context4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#port4_0139"/>
+        <NamedIndividual IRI="#consumerconn4_7872"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#consumerconn4_4328"/>
+        <NamedIndividual IRI="#consumerconn3_5241"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#conn4_4328"/>
+        <NamedIndividual IRI="#conn3_5241"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#consumerconn3_5888"/>
+        <NamedIndividual IRI="#port4_3273"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#conn3_5888"/>
+        <NamedIndividual IRI="#conn4_7872"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#method5"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#port3_7480"/>
+        <NamedIndividual IRI="#publish3_9646"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#mvc1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#consumerconn2_9294"/>
+        <NamedIndividual IRI="#port2_9210"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#port5_6591"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#servlet2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#consumerconn2_6068"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#port3_7184"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#subscriberconn2_dummy_86"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#conn2_6068"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#conn3_dummy_66"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#publish3_5452"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#publish2_5036"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#publish2_3258"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#publisherconn3_dummy_66"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#providerconn2_6068"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#method5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#subscriberconn3_dummy_66"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#publisherconn2_dummy_86"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#providerconn3_5241"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#port1_5803"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#providerconn4_7872"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#APIConnector"/>
@@ -700,27 +730,43 @@
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Consumer"/>
-        <NamedIndividual IRI="#consumerconn2_9294"/>
+        <NamedIndividual IRI="#consumerconn2_6068"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Consumer"/>
-        <NamedIndividual IRI="#consumerconn3_5888"/>
+        <NamedIndividual IRI="#consumerconn3_5241"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Consumer"/>
-        <NamedIndividual IRI="#consumerconn4_4328"/>
+        <NamedIndividual IRI="#consumerconn4_7872"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Provider"/>
-        <NamedIndividual IRI="#providerconn2_9294"/>
+        <NamedIndividual IRI="#providerconn2_6068"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Provider"/>
-        <NamedIndividual IRI="#providerconn3_5888"/>
+        <NamedIndividual IRI="#providerconn3_5241"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Provider"/>
-        <NamedIndividual IRI="#providerconn4_4328"/>
+        <NamedIndividual IRI="#providerconn4_7872"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Publisher"/>
+        <NamedIndividual IRI="#publisherconn2_dummy_86"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Publisher"/>
+        <NamedIndividual IRI="#publisherconn3_dummy_66"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Subscriber"/>
+        <NamedIndividual IRI="#subscriberconn2_dummy_86"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Subscriber"/>
+        <NamedIndividual IRI="#subscriberconn3_dummy_66"/>
     </ClassAssertion>
     <SameIndividual>
         <NamedIndividual IRI="#context4"/>
@@ -739,152 +785,212 @@
     </SameIndividual>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn2_9294"/>
-        <NamedIndividual IRI="#consumerconn2_9294"/>
+        <NamedIndividual IRI="#conn2_6068"/>
+        <NamedIndividual IRI="#consumerconn2_6068"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn2_9294"/>
-        <NamedIndividual IRI="#providerconn2_9294"/>
+        <NamedIndividual IRI="#conn2_6068"/>
+        <NamedIndividual IRI="#providerconn2_6068"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn3_5888"/>
-        <NamedIndividual IRI="#consumerconn3_5888"/>
+        <NamedIndividual IRI="#conn2_dummy_86"/>
+        <NamedIndividual IRI="#publisherconn2_dummy_86"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn3_5888"/>
-        <NamedIndividual IRI="#providerconn3_5888"/>
+        <NamedIndividual IRI="#conn2_dummy_86"/>
+        <NamedIndividual IRI="#subscriberconn2_dummy_86"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn4_4328"/>
-        <NamedIndividual IRI="#consumerconn4_4328"/>
+        <NamedIndividual IRI="#conn3_5241"/>
+        <NamedIndividual IRI="#consumerconn3_5241"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#conn4_4328"/>
-        <NamedIndividual IRI="#providerconn4_4328"/>
+        <NamedIndividual IRI="#conn3_5241"/>
+        <NamedIndividual IRI="#providerconn3_5241"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#conn3_dummy_66"/>
+        <NamedIndividual IRI="#publisherconn3_dummy_66"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#conn3_dummy_66"/>
+        <NamedIndividual IRI="#subscriberconn3_dummy_66"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#conn4_7872"/>
+        <NamedIndividual IRI="#consumerconn4_7872"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#conn4_7872"/>
+        <NamedIndividual IRI="#providerconn4_7872"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
         <NamedIndividual IRI="#context4"/>
-        <NamedIndividual IRI="#port4_0139"/>
+        <NamedIndividual IRI="#port4_3273"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
         <NamedIndividual IRI="#method5"/>
-        <NamedIndividual IRI="#port5_2014"/>
+        <NamedIndividual IRI="#port5_6591"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
         <NamedIndividual IRI="#mvc1"/>
-        <NamedIndividual IRI="#port1_1296"/>
+        <NamedIndividual IRI="#port1_5803"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#mvc1"/>
+        <NamedIndividual IRI="#publish2_3258"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#mvc1"/>
+        <NamedIndividual IRI="#publish3_5452"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port1_1296"/>
-        <NamedIndividual IRI="#consumerconn2_9294"/>
+        <NamedIndividual IRI="#port1_5803"/>
+        <NamedIndividual IRI="#consumerconn2_6068"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port1_1296"/>
-        <NamedIndividual IRI="#consumerconn3_5888"/>
+        <NamedIndividual IRI="#port1_5803"/>
+        <NamedIndividual IRI="#consumerconn3_5241"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port2_3128"/>
-        <NamedIndividual IRI="#consumerconn4_4328"/>
+        <NamedIndividual IRI="#port2_9210"/>
+        <NamedIndividual IRI="#consumerconn4_7872"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port2_3128"/>
-        <NamedIndividual IRI="#providerconn2_9294"/>
+        <NamedIndividual IRI="#port2_9210"/>
+        <NamedIndividual IRI="#providerconn2_6068"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port3_7480"/>
-        <NamedIndividual IRI="#providerconn3_5888"/>
+        <NamedIndividual IRI="#port3_7184"/>
+        <NamedIndividual IRI="#providerconn3_5241"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port4_0139"/>
-        <NamedIndividual IRI="#consumerconn3_5888"/>
+        <NamedIndividual IRI="#port4_3273"/>
+        <NamedIndividual IRI="#consumerconn3_5241"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port4_0139"/>
-        <NamedIndividual IRI="#providerconn4_4328"/>
+        <NamedIndividual IRI="#port4_3273"/>
+        <NamedIndividual IRI="#providerconn4_7872"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port5_2014"/>
-        <NamedIndividual IRI="#consumerconn2_9294"/>
+        <NamedIndividual IRI="#port5_6591"/>
+        <NamedIndividual IRI="#consumerconn2_6068"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
-        <NamedIndividual IRI="#port5_2014"/>
-        <NamedIndividual IRI="#consumerconn3_5888"/>
+        <NamedIndividual IRI="#port5_6591"/>
+        <NamedIndividual IRI="#consumerconn3_5241"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#publish2_3258"/>
+        <NamedIndividual IRI="#subscriberconn2_dummy_86"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#publish2_5036"/>
+        <NamedIndividual IRI="#publisherconn2_dummy_86"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#publish3_5452"/>
+        <NamedIndividual IRI="#subscriberconn3_dummy_66"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#publish3_9646"/>
+        <NamedIndividual IRI="#publisherconn3_dummy_66"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
         <NamedIndividual IRI="#servlet2"/>
-        <NamedIndividual IRI="#port2_3128"/>
+        <NamedIndividual IRI="#port2_9210"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#servlet2"/>
+        <NamedIndividual IRI="#publish2_5036"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
         <NamedIndividual IRI="#web3"/>
-        <NamedIndividual IRI="#port3_7480"/>
+        <NamedIndividual IRI="#port3_7184"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#web3"/>
+        <NamedIndividual IRI="#publish3_9646"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#callToNum"/>
-        <NamedIndividual IRI="#port1_1296"/>
+        <NamedIndividual IRI="#port1_5803"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#consumedByNum"/>
-        <NamedIndividual IRI="#port1_1296"/>
+        <NamedIndividual IRI="#port1_5803"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#callToNum"/>
-        <NamedIndividual IRI="#port2_3128"/>
+        <NamedIndividual IRI="#port2_9210"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#consumedByNum"/>
-        <NamedIndividual IRI="#port2_3128"/>
+        <NamedIndividual IRI="#port2_9210"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#callToNum"/>
-        <NamedIndividual IRI="#port3_7480"/>
+        <NamedIndividual IRI="#port3_7184"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#consumedByNum"/>
-        <NamedIndividual IRI="#port3_7480"/>
+        <NamedIndividual IRI="#port3_7184"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#callToNum"/>
-        <NamedIndividual IRI="#port4_0139"/>
+        <NamedIndividual IRI="#port4_3273"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#consumedByNum"/>
-        <NamedIndividual IRI="#port4_0139"/>
+        <NamedIndividual IRI="#port4_3273"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#callToNum"/>
-        <NamedIndividual IRI="#port5_2014"/>
+        <NamedIndividual IRI="#port5_6591"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#consumedByNum"/>
-        <NamedIndividual IRI="#port5_2014"/>
+        <NamedIndividual IRI="#port5_6591"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
@@ -982,6 +1088,112 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Component"/>
+                <Variable IRI="urn:swrl#comp2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Component"/>
+                <Variable IRI="urn:swrl#comp1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="urn:swrl#p2"/>
+                <Variable IRI="urn:swrl#pub"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="urn:swrl#p4"/>
+                <Variable IRI="urn:swrl#sub"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="urn:swrl#p1"/>
+                <Variable IRI="urn:swrl#con"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="urn:swrl#p3"/>
+                <Variable IRI="urn:swrl#pro"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="urn:swrl#p1"/>
+                <Variable IRI="urn:swrl#comp1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="urn:swrl#p4"/>
+                <Variable IRI="urn:swrl#comp2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="urn:swrl#p2"/>
+                <Variable IRI="urn:swrl#comp1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="urn:swrl#p3"/>
+                <Variable IRI="urn:swrl#comp2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#PnSConnector"/>
+                <Variable IRI="urn:swrl#pns"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="urn:swrl#pns"/>
+                <Variable IRI="urn:swrl#sub"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="urn:swrl#pns"/>
+                <Variable IRI="urn:swrl#pub"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Publisher"/>
+                <Variable IRI="urn:swrl#pub"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Subscriber"/>
+                <Variable IRI="urn:swrl#sub"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#APIConnector"/>
+                <Variable IRI="urn:swrl#cns"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="urn:swrl#cns"/>
+                <Variable IRI="urn:swrl#con"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="urn:swrl#cns"/>
+                <Variable IRI="urn:swrl#pro"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Consumer"/>
+                <Variable IRI="urn:swrl#con"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Provider"/>
+                <Variable IRI="urn:swrl#pro"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#EAConnector"/>
+                <Variable IRI="urn:swrl#pns"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#EAConnector"/>
+                <Variable IRI="urn:swrl#cns"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
         <Annotation>
             <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
@@ -997,89 +1209,105 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#Component"/>
-                <Variable IRI="#comp2"/>
+                <Variable IRI="urn:swrl#comp2"/>
             </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasRole"/>
-                <Variable IRI="#pns"/>
-                <Variable IRI="#sub"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasAttachment"/>
-                <Variable IRI="#p2"/>
-                <Variable IRI="#pub"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasAttachment"/>
-                <Variable IRI="#p4"/>
-                <Variable IRI="#sub"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasRole"/>
-                <Variable IRI="#cns"/>
-                <Variable IRI="#pro"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasAttachment"/>
-                <Variable IRI="#p1"/>
-                <Variable IRI="#con"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isPortOf"/>
-                <Variable IRI="#p1"/>
-                <Variable IRI="#comp1"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isPortOf"/>
-                <Variable IRI="#p4"/>
-                <Variable IRI="#comp2"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isPortOf"/>
-                <Variable IRI="#p2"/>
-                <Variable IRI="#comp1"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isPortOf"/>
-                <Variable IRI="#p3"/>
-                <Variable IRI="#comp2"/>
-            </ObjectPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Component"/>
-                <Variable IRI="#comp1"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#PnSConnector"/>
-                <Variable IRI="#pns"/>
+                <Variable IRI="urn:swrl#comp1"/>
             </ClassAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasRole"/>
-                <Variable IRI="#cns"/>
-                <Variable IRI="#con"/>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="urn:swrl#p2"/>
+                <Variable IRI="urn:swrl#sub"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasAttachment"/>
-                <Variable IRI="#p3"/>
-                <Variable IRI="#pro"/>
+                <Variable IRI="urn:swrl#p4"/>
+                <Variable IRI="urn:swrl#pub"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="urn:swrl#p1"/>
+                <Variable IRI="urn:swrl#con"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAttachment"/>
+                <Variable IRI="urn:swrl#p3"/>
+                <Variable IRI="urn:swrl#pro"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="urn:swrl#p1"/>
+                <Variable IRI="urn:swrl#comp1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="urn:swrl#p4"/>
+                <Variable IRI="urn:swrl#comp2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="urn:swrl#p2"/>
+                <Variable IRI="urn:swrl#comp1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPortOf"/>
+                <Variable IRI="urn:swrl#p3"/>
+                <Variable IRI="urn:swrl#comp2"/>
             </ObjectPropertyAtom>
             <ClassAtom>
-                <Class IRI="#CnSConnector"/>
-                <Variable IRI="#cns"/>
+                <Class IRI="#PnSConnector"/>
+                <Variable IRI="urn:swrl#pns"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasRole"/>
-                <Variable IRI="#pns"/>
-                <Variable IRI="#pub"/>
+                <Variable IRI="urn:swrl#pns"/>
+                <Variable IRI="urn:swrl#sub"/>
             </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="urn:swrl#pns"/>
+                <Variable IRI="urn:swrl#pub"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Publisher"/>
+                <Variable IRI="urn:swrl#pub"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Subscriber"/>
+                <Variable IRI="urn:swrl#sub"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#APIConnector"/>
+                <Variable IRI="urn:swrl#cns"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="urn:swrl#cns"/>
+                <Variable IRI="urn:swrl#con"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRole"/>
+                <Variable IRI="urn:swrl#cns"/>
+                <Variable IRI="urn:swrl#pro"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Consumer"/>
+                <Variable IRI="urn:swrl#con"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Provider"/>
+                <Variable IRI="urn:swrl#pro"/>
+            </ClassAtom>
         </Body>
         <Head>
             <ClassAtom>
                 <Class IRI="#EAConnector"/>
-                <Variable IRI="#pns"/>
+                <Variable IRI="urn:swrl#pns"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#EAConnector"/>
-                <Variable IRI="#cns"/>
+                <Variable IRI="urn:swrl#cns"/>
             </ClassAtom>
         </Head>
     </DLSafeRule>
