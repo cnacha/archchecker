@@ -1,0 +1,58 @@
+﻿connector CnSConnector {
+	role client(j) = request->req!j->res?j-> process -> client(j);  
+	role server()  = req?j -> invoke -> process -> res!j->server();
+}
+
+connector APIConnector {
+	role consumer(j) = request->req!j->res?j-> process -> consumer(j);  
+	role provider()  = req?j -> invoke -> process -> res!j->provider();
+}
+
+connector PnSConnector {
+	role publisher(j) =  process -> pub!j  -> Stop;
+	role subscriber() =   pub?j -> process -> subscriber();
+}
+
+component ShoppingApp {
+   port purchase() = invoke -> present -> order();
+}
+
+component ShoppingService {
+   port order() = invoke -> dispatch -> order();
+}
+
+component PaymentGateway {
+	port pay() = precheck -> paid -> pay();
+}
+
+component Distributor {
+	 port ship() = prepare-> load -> ship();
+
+}
+
+component DBServer {
+  port query();
+}
+
+
+system Shopping{
+    declare orderwire = CnSConnector;
+	declare paywire = CnSConnector;
+	declare shipping = CnSConnector;
+	declare dbaccess = CnSConnector;
+	attach ShoppingApp.purchase() = orderwire.client(97)
+	attach ShoppingService.order() = orderwire.server() <*> paywire.client() <*> shipping.client();
+	attach PaymentGateway.pay() = paywire.server() <*> dbaccess.client();
+	attach Distributor.ship() = shipping.server();
+	attach DBServer.query() = dbaccess.server();
+	execute ShoppingApp.purchase() || ShoppingService.order() || PaymentGateway.pay() || Distributor.ship() || DBServer.query();
+}
+
+assert Shopping deadlockfree;
+assert Shopping circularfree;
+assert Shopping bottleneckfree;
+assert Shopping ambiguousinterfacefree;
+assert Shopping lavaflowfree;
+assert Shopping decompositionfree;
+assert Shopping poltergeistfree;
+assert Shopping |= [] (ShoppingApp.paywire.client.request -> <> ShoppingApp.order.email);
